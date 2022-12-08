@@ -1,0 +1,137 @@
+*,p{
+    margin: 0;
+    padding: 0;
+}
+$lightcolor:#BB00FF;
+.textPink{
+    color: $lightcolor;
+}
+body{
+    background: rgb(10, 10, 10);
+}
+.centerContent{
+    width: 80%;
+    margin: 0 auto;
+}
+footer{
+    padding: 2rem 0 3rem;
+    color: white;
+    background-image: url(../src/imgs/footer.png);
+    ul{
+        padding: 0;
+    }
+    li{
+        display: block;
+        color: #ffffffc2;
+        margin: 19px 0;
+        font-size: 15px;
+    }
+    small{
+        font-size: 12px;
+    }
+}
+.socialIcons {
+    margin-bottom: 50px;
+    li{
+        display: inline-block;
+        img{
+            margin: 0 0 0 33px;
+            width: 27px;
+        }
+    }
+}
+.newslettter{
+    padding: 50px 0;
+}
+.emailsub {
+    background: rgba(66, 0, 91, 0.35);
+    padding: 8px 20px;
+    display: flex;
+    border-radius: 9px;
+    input {
+        border: 0;
+        width: 100%;
+        color: $lightcolor;
+        background: transparent;
+        &::placeholder{
+            color: $lightcolor;
+        }
+    }
+    button {
+        border: 0;
+        font-size: 12px;
+        padding: 9px 17px;
+        background-image: linear-gradient(45deg, #a900e6, #42005b);
+        color: white;
+        border-radius: 85px;
+        display: inline-flex;
+        align-items: center;
+        p{        
+            padding-right: 8px;
+        }
+    }
+}
+.dgrid{
+    display: grid;
+}
+.auditBy{
+    background-image: url(../src/imgs/Auditedby.png);
+    padding: 28px 51px;
+    // width: 100%;
+    border-radius: 33px;
+    color: white;
+    button{
+        background-color: #ffffff2e;
+        color: white;
+        padding: 4px 11px;
+        font-size: 13px;
+        border: 0;
+        border-radius: 4px;
+        place-self: flex-start;
+    }
+}
+.auditByCover{
+    height: 418px;
+    padding-bottom: 60px;
+    align-items: flex-end;
+    display: flex;
+    background-size: cover;
+    background-image: url(../src/imgs/audibyCover.png);
+}
+.feature{
+    background-image: url(../src/imgs/Roadmap.png);
+    padding: 3rem 2rem 4rem 4rem;
+    border-radius: 72px;
+    margin: 3rem 0;    background-size: cover;
+    h1{
+        font-size: 63px;
+        span {
+            font-size: 25px;
+        }
+    }
+    button{ 
+        border-radius: 3px;
+        background-color: rgb(255 255 255 / 10%);
+        color: white;
+        font-size: 12px;
+        border: 0;
+        padding: 6px 14px;
+        display: flex;
+        img {
+           width: 13px;
+           margin-right: 7px;
+       }
+    }
+}
+.feDes{
+    width: 254px;
+    padding: 4rem 0 1.7rem;
+}
+.about{
+    p{
+        width: 27%;
+        font-size: 18px;
+        margin: 0 auto;
+    
+    }
+}
