@@ -17,7 +17,7 @@ export const AuditBy = () => {
                     <img src={Bramah} alt="missing" />    
                 </Col>
                 <Col md={3} sm={12}>
-                    <img src={KudelskiSecurity} alt="missing" />
+                    <img src={KudelskiSecurity} className="w-100" alt="missing" />
                 </Col>
             </Row>
         </div>
