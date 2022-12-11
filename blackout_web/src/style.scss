@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+$buttonbg:linear-gradient(45deg, #a900e6, #42005b);
 $lightcolor:#BB00FF;
 .textPink{
     color: $lightcolor;
@@ -16,7 +17,6 @@ body{
 footer{
     padding: 2rem 0 3rem;
     color: white;
-    background-image: url(../src/imgs/footer.png);
     ul{
         padding: 0;
     }
@@ -28,6 +28,9 @@ footer{
     }
     small{
         font-size: 12px;
+    }
+    .socialiconsend{
+        text-align: right;
     }
 }
 .socialIcons {
@@ -61,7 +64,7 @@ footer{
         border: 0;
         font-size: 12px;
         padding: 9px 17px;
-        background-image: linear-gradient(45deg, #a900e6, #42005b);
+        background-image: $buttonbg;
         color: white;
         border-radius: 85px;
         display: inline-flex;
@@ -77,17 +80,19 @@ footer{
 .auditBy{
     background-image: url(../src/imgs/Auditedby.png);
     padding: 28px 51px;
-    // width: 100%;
     border-radius: 33px;
     color: white;
     button{
-        background-color: #ffffff2e;
+        background-color: #381D43;
         color: white;
         padding: 4px 11px;
         font-size: 13px;
         border: 0;
         border-radius: 4px;
         place-self: flex-start;
+    }
+    .KudelskiSecurity{
+        width: 100%;
     }
 }
 .auditByCover{
@@ -103,6 +108,7 @@ footer{
     padding: 3rem 4rem 2.5rem 4rem;
     position: relative;
     border-radius: 72px;
+    overflow: hidden;
     margin: 5rem 0;    background-size: cover;
     &:nth-child(1){
         background-image: url(../src/imgs/Roadmap.png);
@@ -114,7 +120,8 @@ footer{
         background-image: url(../src/imgs/Roadmap2.png);
     }
     h1{
-        font-size: 69px;
+        text-transform: uppercase;
+        font-size: 61px;
         span {
             font-size: 25px;
         }
@@ -144,16 +151,16 @@ footer{
     }
     .roadmapicon2 {
         position: absolute;
-        right: 0;
+        right: -5%;
         border-radius: 0 0 74px 0;
-        width: 242px;
-        bottom: 0;
+        width: 275px;
+        bottom: -16%;
     }
     .roadmapicon3 {
         position: absolute;
         right: 10%;
         width: 290px;
-        top: 0;
+        top: -23%;
     }
 }
 .about{
@@ -178,11 +185,14 @@ footer{
         }
     }
     .wallet {
-        background-image: linear-gradient(45deg, #a900e6, #42005b);
+        background-image: $buttonbg;
         border-radius: 24px;
         width: 140px;
         text-align: center;
-    }    
+    }
+    .d-none-desktop{
+        display: none;
+    }  
 }
 .banner{
     text-align: center;
@@ -215,4 +225,264 @@ footer{
         width: 40%;
         right: -12%; top: 0;
     }
+}
+// CONTACT US
+.contactnetbg{
+    background-image: url(../src/imgs/contact-us-pg.png);
+    background-size: 100% 100%;
+}
+.contactUsContent{
+    .xicon {
+        position: absolute;
+        right: -3%;
+        width: 9%;
+        bottom: -27%;
+    }
+    .formstyle {
+        background: #42005b7a;
+        border: 1px solid #8e00c1;
+        padding: 8px 12px;
+        font-size: 14px;
+        border-radius: 9px;
+        margin: 8px 0;
+    }
+    button{
+        border-radius: 26px;
+        padding: 8px 27px;
+        font-size: 14px;
+        margin: 16px 0;
+        background-image: $buttonbg;
+    }
+    h1 {
+        font-size: 75px;
+    }  
+    li{
+        display: block;
+        margin: 16px 0;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+    .links {
+        img{
+            width: 30px;
+        }
+    }
+    .contacticons {
+        align-items:center;
+        img {
+            width: 65%;
+        }
+    }
+}
+.contactnet{
+    height: 450px;
+    margin: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+// RESPONSIVENESS
+@media only screen and (max-width: 678px) {
+    .gifBg {
+        background-image: url(./imgs/indexgif.gif);
+        top: -21%;
+        position: absolute;
+        height: 220px;
+        background-size: 100% 100%;
+        z-index: -2;
+    }
+.bgmain{
+    // background-image: url(../src/imgs/Backgroundindexmbl.png);
+    background-image: none;
+    position: relative;
+    &:before {
+        background-image: url(./imgs/Backgroundindexmbl.png);
+        opacity: 0.8;
+        position: absolute;
+        content: "";
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-size: 100%;
+        width: 100%;
+        // height: 100vh;
+    }
+    .headerbar{
+        padding: 8.5rem 0 0.5rem;
+    }
+    .navbar{
+        a{
+            margin: auto;
+        }
+        .navbar-toggler-icon{
+            background-image: url(../src/imgs/menu.png);
+        }
+    }
+    .d-none-mbl{
+        display: none;
+    }
+    .d-none-desktop{
+        display: block;
+    }
+    .welcomTitle{
+        span{
+            display: none;
+        }
+    }
+    .banner {
+        h1 {
+            line-height: 1.2;
+            font-size: 3.3rem;
+            span {
+                font-size: 19px;
+            }
+        }
+        .leftGif,.rightGif{display: none;}
+    }
+    .bannerText {
+        font-size: 14px;
+    }
+    .about {
+        p {
+            width: 77%;
+            font-size: 14px;
+       }
+    }
+    .auditByCover {
+        height: auto;
+        background-repeat: no-repeat;
+        padding-bottom: 0px;
+        background-size: 100%;
+    }
+    .about{
+        height: 225px;
+    }
+    .banner {
+        height: 292px;
+    }
+    .centerContent {
+        width:88%;
+    }
+    .feature {        
+        padding: 2.6em 2rem 2.5rem 2.3rem;
+        border-radius: 43px;
+        margin: 2rem 0;
+        height: 470px;
+        overflow: hidden;
+        &:nth-child(1){
+            background-image: url(../src/imgs/Roadmap1mbl.png);
+        }
+        &:nth-child(2){
+            background-image: url(../src/imgs/Roadmap2mbl.png);
+        }
+        &:nth-child(3){
+            background-image: url(../src/imgs/Roadmap3mbl.png);
+        }
+        h1 {
+            font-size: 44px;
+            text-transform: uppercase;
+        }
+        h4 {
+            font-size: 17px;
+        }
+        .feDes {
+            width: auto;
+            font-size: 14px;
+            padding: 1.2rem 0 1rem;
+        }
+        .roadmapicon1 {
+            right: -17%;
+            width: 203px;
+        }
+        button {
+           font-size: 16px;
+           img {
+            width: 16px;
+           }
+        }
+        .roadmapicon3 {
+            top: auto;
+            right: -2%;
+            width: 203px;
+            bottom: -17%;
+        }
+        .roadmapicon2 {
+            border-radius: 0;
+            width: 172px;
+            top: 0;
+            left: -16%;
+        }
+    }
+    .auditBy {
+        text-align: center;
+        background-image: url(../src/imgs/Auditedbymbl.png);
+        background-size: 100% 100%;
+        margin-top: 90px;
+        h1{
+            font-size: 32px;
+        }
+        button {
+            place-self: center;
+            padding: 9px 37px;
+            letter-spacing: 1px;
+            margin-bottom: 2.5rem;
+        }
+        img {
+            width: 27%;
+            margin: 17px 0;
+        }
+        .KudelskiSecurity {
+            width: 82%;
+        }
+    }
+    footer {
+        padding: 10px;
+        .newslettter{
+            text-align: center;
+            h2{
+                font-weight: 700;
+                font-size: 30px;
+            }
+            p{            
+                margin: 1.3rem 0;
+            }
+            button{
+                font-size: 21px;
+                padding: 5px 12px;            
+                p{display: none;}
+            }
+        }
+        .socialiconsend{
+            text-align: center;
+            margin:1.4rem 0 3rem;
+            p{
+                margin: 1rem 0;
+            }
+        }
+        .socialIcons {
+            margin-bottom: 0rem;
+            img {
+                margin: 0 16px 0 16px;
+                width: 27px;
+            }
+        }
+    }
+    .feature:nth-child(2) {
+        display: flex;
+        .b2 {
+            align-self: self-end;
+        }
+    }
+}
+
 }

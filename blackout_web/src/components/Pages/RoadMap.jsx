@@ -41,12 +41,14 @@ export const RoadMap = () => {
       {roadMap.map((roadMapData, index)=>{
         return(
            <div className='feature text-white' key={index}>
-            <h1 className='fw-bold'>{roadMapData.title}<span className='textPink'><GoPrimitiveDot/></span> </h1>
-            <h4 className='textPink'>{roadMapData.des}</h4>
-            <p className='feDes'>{roadMapData.content}</p>
-            <button><img src={roadMapData.vector} alt="missing" /> LEARN MORE</button>
-            <img src={roadMapData.icon} className={roadMapData.renderingclass} alt="missing" />
-        </div>
+            <div className='b2'>
+              <h1 className='fw-bold'>{roadMapData.title}<span className='textPink'><GoPrimitiveDot/></span> </h1>
+              <h4 className='textPink'>{roadMapData.des}</h4>
+              <p className='feDes'>{roadMapData.content}</p>
+              <button><img src={roadMapData.vector} alt="missing" /> LEARN MORE</button>
+              <img src={roadMapData.icon} className={roadMapData.renderingclass} alt="missing" />
+            </div>
+          </div>
         )
       })}
     </div>

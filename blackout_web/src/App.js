@@ -1,23 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import logo from './logo.svg';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-import { Footer } from './components/footer/Footer';
-import { Header } from './components/header/Header';
-import { About } from './components/Pages/About';
-import { AuditBy } from './components/Pages/AuditBy';
-import { Banner } from './components/Pages/Banner';
-import { RoadMap } from './components/Pages/RoadMap';
+import { Router } from './Router';
 
 function App() {
   return (
-   <div className='bgmain'>
-   <Header/>
-    <Banner/>
-   <About/>
-   <RoadMap/>
-   <AuditBy/>
-   <Footer/>
-   </div>
+    <BrowserRouter>
+      <Router/>
+    </BrowserRouter>
   );
 }
 

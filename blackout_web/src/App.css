@@ -19,7 +19,6 @@ body {
 footer {
   padding: 2rem 0 3rem;
   color: white;
-  background-image: url(../src/imgs/footer.png);
 }
 footer ul {
   padding: 0;
@@ -32,6 +31,9 @@ footer li {
 }
 footer small {
   font-size: 12px;
+}
+footer .socialiconsend {
+  text-align: right;
 }
 
 .socialIcons {
@@ -89,13 +91,16 @@ footer small {
   color: white;
 }
 .auditBy button {
-  background-color: rgba(255, 255, 255, 0.1803921569);
+  background-color: #381D43;
   color: white;
   padding: 4px 11px;
   font-size: 13px;
   border: 0;
   border-radius: 4px;
   place-self: flex-start;
+}
+.auditBy .KudelskiSecurity {
+  width: 100%;
 }
 
 .auditByCover {
@@ -111,6 +116,7 @@ footer small {
   padding: 3rem 4rem 2.5rem 4rem;
   position: relative;
   border-radius: 72px;
+  overflow: hidden;
   margin: 5rem 0;
   background-size: cover;
 }
@@ -124,7 +130,8 @@ footer small {
   background-image: url(../src/imgs/Roadmap2.png);
 }
 .feature h1 {
-  font-size: 69px;
+  text-transform: uppercase;
+  font-size: 61px;
 }
 .feature h1 span {
   font-size: 25px;
@@ -154,16 +161,16 @@ footer small {
 }
 .feature .roadmapicon2 {
   position: absolute;
-  right: 0;
+  right: -5%;
   border-radius: 0 0 74px 0;
-  width: 242px;
-  bottom: 0;
+  width: 275px;
+  bottom: -16%;
 }
 .feature .roadmapicon3 {
   position: absolute;
   right: 10%;
   width: 290px;
-  top: 0;
+  top: -23%;
 }
 
 .about p {
@@ -192,6 +199,9 @@ footer small {
   border-radius: 24px;
   width: 140px;
   text-align: center;
+}
+.headerbar .d-none-desktop {
+  display: none;
 }
 
 .banner {
@@ -227,6 +237,248 @@ footer small {
   width: 40%;
   right: -12%;
   top: 0;
+}
+
+.contactnetbg {
+  background-image: url(../src/imgs/contact-us-pg.png);
+  background-size: 100% 100%;
+}
+
+.contactUsContent .xicon {
+  position: absolute;
+  right: -3%;
+  width: 9%;
+  bottom: -27%;
+}
+.contactUsContent .formstyle {
+  background: rgba(66, 0, 91, 0.4784313725);
+  border: 1px solid #8e00c1;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 9px;
+  margin: 8px 0;
+}
+.contactUsContent button {
+  border-radius: 26px;
+  padding: 8px 27px;
+  font-size: 14px;
+  margin: 16px 0;
+  background-image: linear-gradient(45deg, #a900e6, #42005b);
+}
+.contactUsContent h1 {
+  font-size: 75px;
+}
+.contactUsContent li {
+  display: block;
+  margin: 16px 0;
+}
+.contactUsContent li a {
+  color: white;
+  text-decoration: none;
+}
+.contactUsContent .links img {
+  width: 30px;
+}
+.contactUsContent .contacticons {
+  align-items: center;
+}
+.contactUsContent .contacticons img {
+  width: 65%;
+}
+
+.contactnet {
+  height: 450px;
+  margin: 20px 0;
+}
+
+@media only screen and (max-width: 678px) {
+  .gifBg {
+    background-image: url(./imgs/indexgif.gif);
+    top: -21%;
+    position: absolute;
+    height: 220px;
+    background-size: 100% 100%;
+    z-index: -2;
+  }
+  .bgmain {
+    background-image: none;
+    position: relative;
+  }
+  .bgmain:before {
+    background-image: url(./imgs/Backgroundindexmbl.png);
+    opacity: 0.8;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: 100%;
+    width: 100%;
+  }
+  .bgmain .headerbar {
+    padding: 8.5rem 0 0.5rem;
+  }
+  .bgmain .navbar a {
+    margin: auto;
+  }
+  .bgmain .navbar .navbar-toggler-icon {
+    background-image: url(../src/imgs/menu.png);
+  }
+  .bgmain .d-none-mbl {
+    display: none;
+  }
+  .bgmain .d-none-desktop {
+    display: block;
+  }
+  .bgmain .welcomTitle span {
+    display: none;
+  }
+  .bgmain .banner h1 {
+    line-height: 1.2;
+    font-size: 3.3rem;
+  }
+  .bgmain .banner h1 span {
+    font-size: 19px;
+  }
+  .bgmain .banner .leftGif, .bgmain .banner .rightGif {
+    display: none;
+  }
+  .bgmain .bannerText {
+    font-size: 14px;
+  }
+  .bgmain .about p {
+    width: 77%;
+    font-size: 14px;
+  }
+  .bgmain .auditByCover {
+    height: auto;
+    background-repeat: no-repeat;
+    padding-bottom: 0px;
+    background-size: 100%;
+  }
+  .bgmain .about {
+    height: 225px;
+  }
+  .bgmain .banner {
+    height: 292px;
+  }
+  .bgmain .centerContent {
+    width: 88%;
+  }
+  .bgmain .feature {
+    padding: 2.6em 2rem 2.5rem 2.3rem;
+    border-radius: 43px;
+    margin: 2rem 0;
+    height: 470px;
+    overflow: hidden;
+  }
+  .bgmain .feature:nth-child(1) {
+    background-image: url(../src/imgs/Roadmap1mbl.png);
+  }
+  .bgmain .feature:nth-child(2) {
+    background-image: url(../src/imgs/Roadmap2mbl.png);
+  }
+  .bgmain .feature:nth-child(3) {
+    background-image: url(../src/imgs/Roadmap3mbl.png);
+  }
+  .bgmain .feature h1 {
+    font-size: 44px;
+    text-transform: uppercase;
+  }
+  .bgmain .feature h4 {
+    font-size: 17px;
+  }
+  .bgmain .feature .feDes {
+    width: auto;
+    font-size: 14px;
+    padding: 1.2rem 0 1rem;
+  }
+  .bgmain .feature .roadmapicon1 {
+    right: -17%;
+    width: 203px;
+  }
+  .bgmain .feature button {
+    font-size: 16px;
+  }
+  .bgmain .feature button img {
+    width: 16px;
+  }
+  .bgmain .feature .roadmapicon3 {
+    top: auto;
+    right: -2%;
+    width: 203px;
+    bottom: -17%;
+  }
+  .bgmain .feature .roadmapicon2 {
+    border-radius: 0;
+    width: 172px;
+    top: 0;
+    left: -16%;
+  }
+  .bgmain .auditBy {
+    text-align: center;
+    background-image: url(../src/imgs/Auditedbymbl.png);
+    background-size: 100% 100%;
+    margin-top: 90px;
+  }
+  .bgmain .auditBy h1 {
+    font-size: 32px;
+  }
+  .bgmain .auditBy button {
+    place-self: center;
+    padding: 9px 37px;
+    letter-spacing: 1px;
+    margin-bottom: 2.5rem;
+  }
+  .bgmain .auditBy img {
+    width: 27%;
+    margin: 17px 0;
+  }
+  .bgmain .auditBy .KudelskiSecurity {
+    width: 82%;
+  }
+  .bgmain footer {
+    padding: 10px;
+  }
+  .bgmain footer .newslettter {
+    text-align: center;
+  }
+  .bgmain footer .newslettter h2 {
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .bgmain footer .newslettter p {
+    margin: 1.3rem 0;
+  }
+  .bgmain footer .newslettter button {
+    font-size: 21px;
+    padding: 5px 12px;
+  }
+  .bgmain footer .newslettter button p {
+    display: none;
+  }
+  .bgmain footer .socialiconsend {
+    text-align: center;
+    margin: 1.4rem 0 3rem;
+  }
+  .bgmain footer .socialiconsend p {
+    margin: 1rem 0;
+  }
+  .bgmain footer .socialIcons {
+    margin-bottom: 0rem;
+  }
+  .bgmain footer .socialIcons img {
+    margin: 0 16px 0 16px;
+    width: 27px;
+  }
+  .bgmain .feature:nth-child(2) {
+    display: flex;
+  }
+  .bgmain .feature:nth-child(2) .b2 {
+    align-self: self-end;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

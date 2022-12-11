@@ -7,7 +7,7 @@ export const Banner = () => {
     <div className='banner text-white'>
         <div>
             <img src={gif} className="leftGif" alt="missing" />
-            <p className='welcomTitle textPink'>Welcome to blackout</p>
+            <p className='welcomTitle textPink'>Welcome <span> to blackout</span></p>
             <h1 className='fw-bold'>Experience<span className='textPink'><GoPrimitiveDot/></span>  <br /> Utility<span className='textPink'><GoPrimitiveDot/></span> </h1>
             <p className='bannerText'>Building crucial blockchain-enabled <br /> products and services</p>
             <img src={gif} className="rightGif" alt="missing" />
