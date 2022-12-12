@@ -3,12 +3,21 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "BasicFont";
+  src: local("BasicFont"), url(./gilroy-fontFamily/Gilroy-Regular.ttf);
+}
+@font-face {
+  font-family: "BoldFont";
+  src: local("BoldFont"), url(./gilroy-fontFamily/Gilroy-Black.ttf);
+}
 .textPink {
   color: #BB00FF;
 }
 
 body {
   background: rgb(10, 10, 10);
+  font-family: "BasicFont";
 }
 
 .centerContent {
@@ -50,6 +59,9 @@ footer .socialiconsend {
 .newslettter {
   padding: 50px 0;
 }
+.newslettter h2 {
+  font-family: "BoldFont";
+}
 
 .emailsub {
   background: rgba(66, 0, 91, 0.35);
@@ -89,6 +101,9 @@ footer .socialiconsend {
   padding: 28px 51px;
   border-radius: 33px;
   color: white;
+}
+.auditBy h1 {
+  font-family: "BoldFont";
 }
 .auditBy button {
   background-color: #381D43;
@@ -132,6 +147,7 @@ footer .socialiconsend {
 .feature h1 {
   text-transform: uppercase;
   font-size: 61px;
+  font-family: "BoldFont";
 }
 .feature h1 span {
   font-size: 25px;
@@ -230,18 +246,48 @@ footer .socialiconsend {
   position: absolute;
   width: 40%;
   left: -12%;
-  top: 0;
 }
 .banner .rightGif {
   position: absolute;
   width: 40%;
   right: -12%;
-  top: 0;
+  top: 15%;
 }
 
 .contactnetbg {
+  position: relative;
+}
+.contactnetbg:before {
+  opacity: 0.7;
+  position: absolute;
+  content: "";
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
   background-image: url(../src/imgs/contact-us-pg.png);
   background-size: 100% 100%;
+}
+.contactnetbg .contactnet {
+  height: 530px;
+  margin: 20px 0;
+  position: relative;
+}
+.contactnetbg .contactnet:after {
+  background-image: url(./imgs/animation.gif);
+  content: "";
+  position: absolute;
+  z-index: -2;
+  top: -89%;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  bottom: 0;
+  width: 100%;
+  background-size: 100%;
+  mix-blend-mode: luminosity;
 }
 
 .contactUsContent .xicon {
@@ -263,6 +309,7 @@ footer .socialiconsend {
   padding: 8px 27px;
   font-size: 14px;
   margin: 16px 0;
+  border: 0;
   background-image: linear-gradient(45deg, #a900e6, #42005b);
 }
 .contactUsContent h1 {
@@ -272,31 +319,74 @@ footer .socialiconsend {
   display: block;
   margin: 16px 0;
 }
-.contactUsContent li a {
+.contactUsContent .links img {
+  width: 30px;
+}
+.contactUsContent .links a {
   color: white;
   text-decoration: none;
 }
-.contactUsContent .links img {
-  width: 30px;
+.contactUsContent .links .row div {
+  padding: 8px 0;
 }
 .contactUsContent .contacticons {
   align-items: center;
 }
 .contactUsContent .contacticons img {
-  width: 65%;
+  width: 100%;
+}
+.contactUsContent .contacticons .contactlogo2 {
+  width: 65px;
 }
 
-.contactnet {
-  height: 450px;
-  margin: 20px 0;
-}
-
-@media only screen and (max-width: 678px) {
+@media only screen and (max-width: 768px) {
+  .textCenterMbl {
+    text-align: center;
+  }
+  .contactnetbg:before {
+    background-image: url(../src/imgs/contact-us-mobile.png);
+  }
+  .contactUsContent {
+    padding-top: 2rem;
+  }
+  .contactUsContent .links img {
+    width: 36px;
+  }
+  .contactUsContent button {
+    padding: 9px 27px;
+    font-size: 18px;
+    width: 100%;
+  }
+  .contactUsContent h5 {
+    font-size: 21px;
+  }
+  .contactUsContent .contacticons {
+    text-align: center;
+  }
+  .contactUsContent .contacticons h5 {
+    font-size: 19px;
+  }
+  .contactUsContent .contacticons li {
+    margin-bottom: 0;
+  }
+  .contactUsContent .contacticons .contactlogo2 {
+    width: 67px;
+  }
+  .contactUsContent .contactnet {
+    height: 354px;
+    margin: 0px 0;
+  }
+  .contactUsContent .contactnet:after {
+    top: -100%;
+    bottom: -24%;
+    background-size: cover;
+    background-position-x: center;
+  }
   .gifBg {
     background-image: url(./imgs/indexgif.gif);
     top: -21%;
     position: absolute;
-    height: 220px;
+    height: 200px;
     background-size: 100% 100%;
     z-index: -2;
   }
@@ -318,166 +408,226 @@ footer .socialiconsend {
     width: 100%;
   }
   .bgmain .headerbar {
-    padding: 8.5rem 0 0.5rem;
+    padding: 10.6rem 0 0rem;
   }
-  .bgmain .navbar a {
-    margin: auto;
-  }
-  .bgmain .navbar .navbar-toggler-icon {
-    background-image: url(../src/imgs/menu.png);
-  }
-  .bgmain .d-none-mbl {
-    display: none;
-  }
-  .bgmain .d-none-desktop {
+  .headerbar .d-none-desktop {
     display: block;
   }
-  .bgmain .welcomTitle span {
+  .headerbar .d-none-mbl {
     display: none;
   }
-  .bgmain .banner h1 {
+  .navbar a {
+    margin: auto;
+  }
+  .navbar .navbar-toggler-icon {
+    background-image: url(../src/imgs/menu.png);
+  }
+  .welcomTitle span {
+    display: none;
+  }
+  .banner {
+    height: 482px;
+  }
+  .banner h1 {
     line-height: 1.2;
-    font-size: 3.3rem;
+    font-size: 6rem;
   }
-  .bgmain .banner h1 span {
-    font-size: 19px;
+  .banner h1 span {
+    font-size: 25px;
   }
-  .bgmain .banner .leftGif, .bgmain .banner .rightGif {
+  .banner .welcomTitle {
+    letter-spacing: 29px;
+    font-size: 17px;
+  }
+  .banner .leftGif, .banner .rightGif {
     display: none;
   }
-  .bgmain .bannerText {
-    font-size: 14px;
+  .banner .bannerText {
+    font-size: 16px;
   }
-  .bgmain .about p {
-    width: 77%;
-    font-size: 14px;
+  .about p {
+    width: 46%;
+    font-size: 16px;
   }
-  .bgmain .auditByCover {
+  .auditByCover {
     height: auto;
     background-repeat: no-repeat;
     padding-bottom: 0px;
     background-size: 100%;
   }
-  .bgmain .about {
-    height: 225px;
+  .about {
+    height: 275px;
   }
-  .bgmain .banner {
-    height: 292px;
-  }
-  .bgmain .centerContent {
+  .centerContent {
     width: 88%;
   }
-  .bgmain .feature {
+  .feature {
     padding: 2.6em 2rem 2.5rem 2.3rem;
     border-radius: 43px;
     margin: 2rem 0;
     height: 470px;
     overflow: hidden;
   }
-  .bgmain .feature:nth-child(1) {
+  .feature:nth-child(1) {
     background-image: url(../src/imgs/Roadmap1mbl.png);
   }
-  .bgmain .feature:nth-child(2) {
+  .feature:nth-child(2) {
     background-image: url(../src/imgs/Roadmap2mbl.png);
   }
-  .bgmain .feature:nth-child(3) {
+  .feature:nth-child(3) {
     background-image: url(../src/imgs/Roadmap3mbl.png);
   }
-  .bgmain .feature h1 {
-    font-size: 44px;
+  .feature h1 {
+    font-size: 54px;
     text-transform: uppercase;
   }
-  .bgmain .feature h4 {
+  .feature h4 {
     font-size: 17px;
   }
-  .bgmain .feature .feDes {
+  .feature .feDes {
     width: auto;
     font-size: 14px;
     padding: 1.2rem 0 1rem;
   }
-  .bgmain .feature .roadmapicon1 {
-    right: -17%;
+  .feature .roadmapicon1 {
+    right: -6%;
     width: 203px;
   }
-  .bgmain .feature button {
+  .feature button {
     font-size: 16px;
   }
-  .bgmain .feature button img {
+  .feature button img {
     width: 16px;
   }
-  .bgmain .feature .roadmapicon3 {
+  .feature .roadmapicon3 {
     top: auto;
     right: -2%;
     width: 203px;
     bottom: -17%;
   }
-  .bgmain .feature .roadmapicon2 {
+  .feature .roadmapicon2 {
     border-radius: 0;
     width: 172px;
-    top: 0;
-    left: -16%;
+    top: 6px;
+    left: -6%;
   }
-  .bgmain .auditBy {
+  .auditBy {
     text-align: center;
     background-image: url(../src/imgs/Auditedbymbl.png);
     background-size: 100% 100%;
-    margin-top: 90px;
+    margin-top: 156px;
   }
-  .bgmain .auditBy h1 {
-    font-size: 32px;
+  .auditBy h1 {
+    font-size: 80px;
   }
-  .bgmain .auditBy button {
+  .auditBy button {
     place-self: center;
     padding: 9px 37px;
     letter-spacing: 1px;
     margin-bottom: 2.5rem;
   }
-  .bgmain .auditBy img {
-    width: 27%;
+  .auditBy img {
+    width: 17%;
     margin: 17px 0;
   }
-  .bgmain .auditBy .KudelskiSecurity {
-    width: 82%;
+  .auditBy .KudelskiSecurity {
+    width: 42%;
   }
-  .bgmain footer {
+  footer {
     padding: 10px;
   }
-  .bgmain footer .newslettter {
+  footer .newslettter {
     text-align: center;
   }
-  .bgmain footer .newslettter h2 {
+  footer .newslettter h2 {
     font-weight: 700;
     font-size: 30px;
   }
-  .bgmain footer .newslettter p {
+  footer .newslettter p {
     margin: 1.3rem 0;
   }
-  .bgmain footer .newslettter button {
+  footer .newslettter button {
     font-size: 21px;
     padding: 5px 12px;
   }
-  .bgmain footer .newslettter button p {
+  footer .newslettter button p {
     display: none;
   }
-  .bgmain footer .socialiconsend {
+  footer .socialiconsend {
     text-align: center;
     margin: 1.4rem 0 3rem;
   }
-  .bgmain footer .socialiconsend p {
+  footer .socialiconsend p {
     margin: 1rem 0;
   }
-  .bgmain footer .socialIcons {
+  footer .socialIcons {
     margin-bottom: 0rem;
   }
-  .bgmain footer .socialIcons img {
+  footer .socialIcons img {
     margin: 0 16px 0 16px;
     width: 27px;
   }
-  .bgmain .feature:nth-child(2) {
+  .feature:nth-child(2) {
     display: flex;
   }
-  .bgmain .feature:nth-child(2) .b2 {
+  .feature:nth-child(2) .b2 {
     align-self: self-end;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .contactUsContent h1 {
+    font-size: 54px;
+  }
+  .contactUsContent h5 {
+    font-size: 16px;
+  }
+  .contactUsContent .contacticons .contactlogo2 {
+    width: 44px;
+  }
+  .headerbar {
+    padding: 2.2rem 0 0.5rem;
+  }
+  .feature .roadmapicon1 {
+    right: -17%;
+  }
+  .feature .roadmapicon2 {
+    top: 0;
+    left: -16%;
+  }
+  .feature h1 {
+    font-size: 44px;
+  }
+  .banner {
+    height: 292px;
+  }
+  .banner h1 {
+    font-size: 3.3rem;
+  }
+  .banner h1 span {
+    font-size: 19px;
+  }
+  .banner .welcomTitle {
+    letter-spacing: 14px;
+    font-size: 14px;
+  }
+  .banner .bannerText {
+    font-size: 14px;
+  }
+  .auditBy {
+    margin-top: 90px;
+  }
+  .auditBy h1 {
+    font-size: 36px;
+  }
+  .auditBy img {
+    width: 27%;
+    margin: 17px 0;
+  }
+  .auditBy .KudelskiSecurity {
+    width: 82%;
+  }
+  .about p {
+    width: 77%;
   }
 }
 

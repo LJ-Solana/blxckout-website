@@ -9,6 +9,7 @@ import icon3 from '../../imgs/contacticon3.png'
 import icon4 from '../../imgs/contacticon4.png'
 import Bramah from '../../imgs/Bramah.png'
 import KudelskiSecurity from '../../imgs/KudelskiSecurity.png'
+import gif from '../../imgs/animation.gif'
 import { NavLink } from 'react-router-dom'
 
 
@@ -18,10 +19,10 @@ export const Contact = () => {
       <Layout>
         <div className=" contactUsContent my-2">
         <div className="centerContent position-relative text-white">
-          <h1 className='fw-bold'>Get in touch</h1>
-          <h5 className='my-3 fw-bold'>We are here for you! How can we help?</h5>
+          <h1 className='fw-bold textCenterMbl'>Get in touch</h1>
+          <h5 className='my-3 fw-bold textCenterMbl'>We are here for you! How can we help?</h5>
           <Row>
-            <Col md={6} xs={12}>
+            <Col className='textCenterMbl' md={6} xs={12}>
               <form>
                 <input type="text" className='w-100 formstyle' name="" id=""  placeholder='What is your full name ?'/> <br />
                 <input type="text" className='w-100 formstyle' name="" id="" placeholder='What is email address ?' />  <br />
@@ -31,20 +32,28 @@ export const Contact = () => {
             </Col>
             <Col md={6} xs={12}>
               <ul className='links'>
-                <li><img src={icon1} alt="missing" /> <NavLink to="/"> https://www.blxckout.xyz/</NavLink> </li>
-                <li><img src={icon2} alt="missing" /><NavLink> Ij@blxckout.xyz, brood@blxckout.xyz</NavLink></li>
-                <li><img src={icon3} alt="missing" /><NavLink> blckout_nft-BLXCKOUT, synx_xyz-SERVE-X, TheNxde-The NXDE</NavLink></li>
-                <li><img src={icon4} alt="missing" /> <NavLink> blxckout</NavLink> </li>
+                <Row>
+                   <Col xs={2} md={1} className="px-0"> <img src={icon1} alt="missing" /> </Col>
+                   <Col xs={10} md={11}> <NavLink to="/"> https://www.blxckout.xyz/</NavLink> </Col>
+                   <Col xs={2} md={1} className="px-0"> <img src={icon2} alt="missing" /> </Col>
+                   <Col xs={10} md={11}> <NavLink to="/"> Ij@blxckout.xyz, brood@blxckout.xyz</NavLink> </Col>
+                   <Col xs={2} md={1} className="px-0"> <img src={icon3} alt="missing" /> </Col>
+                   <Col xs={10} md={11}> <NavLink to="/"> blckout_nft-BLXCKOUT, synx_xyz-SERVE-X, TheNxde-The NXDE</NavLink> </Col>
+                   <Col xs={2} md={1} className="px-0"> <img src={icon4} alt="missing" /> </Col>
+                   <Col xs={10} md={11}> <NavLink to="/"> blxckout</NavLink> </Col>
+                </Row>
               </ul>
-              <ul className='contacticons text-center d-flex'>
-                <li> <h5 className='textPink'>Powered By</h5></li>
-                <li><img src={KudelskiSecurity} alt="missing" /></li>
-                <li><img src={Bramah} alt="missing" /></li>
+              <ul className='contacticons text-center d-flex row'>
+                <li className='col-12 col-md-4'> <h5 className='textPink'>Powered By</h5></li>
+                <li className='col-6 col-md-4'><img src={KudelskiSecurity} alt="missing" /></li>
+                <li className='col-6 col-md-4'><img className='contactlogo2' src={Bramah} alt="missing" /></li>
               </ul>
             </Col>
           </Row>
         </div>
-        <div className='contactnet w-100'></div>
+        <div className='contactnet w-100'>
+          {/* <img src={gif} alt="missing" /> */}
+        </div>
         </div>
       </Layout>
     </div>

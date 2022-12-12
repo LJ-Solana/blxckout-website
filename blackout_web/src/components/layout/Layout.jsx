@@ -75,7 +75,7 @@ export const Layout = (props) => {
                         </Col>
                     </Row>
                     <Row>
-                        <Col md={3} xs={6}>
+                        <Col md={3} sm={6} xs={6}>
                             <ul>
                                 <h6 className='fw-bold'>Blackout</h6>
                                 <li>About us</li>
@@ -84,7 +84,7 @@ export const Layout = (props) => {
                                 <li>Go to App  <HiArrowUpRight/></li>
                             </ul>
                         </Col>
-                        <Col md={5} xs={6}>
+                        <Col md={5} sm={6} xs={6}>
                             <ul>
                                 <h6 className='fw-bold'>Resources</h6>
                                 <li>Litepaper  <HiArrowUpRight/></li>
@@ -92,7 +92,7 @@ export const Layout = (props) => {
                                 <li>FAQ <HiArrowUpRight/></li>
                             </ul>
                         </Col>
-                        <Col md={4} xs={12} className="socialiconsend">
+                        <Col md={4} sm={12} xs={12} className="socialiconsend">
                             <ul className='socialIcons'>
                                 <li> <img src={discord} alt="missing" /> </li>
                                 <li> <img src={twitter} alt="missing" /> </li>

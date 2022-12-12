@@ -4,11 +4,20 @@
 }
 $buttonbg:linear-gradient(45deg, #a900e6, #42005b);
 $lightcolor:#BB00FF;
+@font-face {
+    font-family: 'BasicFont';
+    src: local('BasicFont'), url(./gilroy-fontFamily/Gilroy-Regular.ttf);
+}
+@font-face {
+    font-family: 'BoldFont';
+    src: local('BoldFont'), url(./gilroy-fontFamily/Gilroy-Black.ttf);
+}
 .textPink{
     color: $lightcolor;
 }
 body{
     background: rgb(10, 10, 10);
+    font-family: "BasicFont";
 }
 .centerContent{
     width: 80%;
@@ -45,6 +54,9 @@ footer{
 }
 .newslettter{
     padding: 50px 0;
+    h2{
+        font-family: "BoldFont";
+    }
 }
 .emailsub {
     background: rgba(66, 0, 91, 0.35);
@@ -82,6 +94,9 @@ footer{
     padding: 28px 51px;
     border-radius: 33px;
     color: white;
+    h1{
+        font-family: "BoldFont";
+    }
     button{
         background-color: #381D43;
         color: white;
@@ -121,7 +136,7 @@ footer{
     }
     h1{
         text-transform: uppercase;
-        font-size: 61px;
+        font-size: 61px; font-family: "BoldFont";
         span {
             font-size: 25px;
         }
@@ -218,18 +233,53 @@ footer{
     .leftGif {
         position: absolute;
         width: 40%;
-        left: -12%; top: 0;
+        left: -12%; 
+        // top: 50;
     }
     .rightGif {
         position: absolute;
         width: 40%;
-        right: -12%; top: 0;
+        right: -12%; 
+        // top: 50;
+    top: 15%;
     }
 }
 // CONTACT US
 .contactnetbg{
-    background-image: url(../src/imgs/contact-us-pg.png);
-    background-size: 100% 100%;
+    position: relative;
+    &:before{  
+         opacity: 0.7;
+        position: absolute;
+        content: "";
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background-image: url(../src/imgs/contact-us-pg.png);
+        background-size: 100% 100%;
+    }
+    .contactnet{
+        height: 530px;
+        margin: 20px 0;
+        position: relative;
+        &:after {
+            background-image: url(./imgs/animation.gif);
+            content: "";
+            position: absolute;
+            z-index: -2;
+            top: -89%;
+            left: 0;
+            right: 0;
+            background-repeat: no-repeat;
+            bottom: 0;
+            width: 100%;
+            background-size: 100%;
+            mix-blend-mode: luminosity;
+        }
+    }
+   
 }
 .contactUsContent{
     .xicon {
@@ -251,6 +301,7 @@ footer{
         padding: 8px 27px;
         font-size: 14px;
         margin: 16px 0;
+        border: 0;
         background-image: $buttonbg;
     }
     h1 {
@@ -259,26 +310,28 @@ footer{
     li{
         display: block;
         margin: 16px 0;
-        a{
-            color: white;
-            text-decoration: none;
-        }
+        
     }
     .links {
         img{
             width: 30px;
+        }a{
+            color: white;
+            text-decoration: none;
+        }
+        .row div{
+            padding: 8px 0;
         }
     }
     .contacticons {
         align-items:center;
         img {
-            width: 65%;
+            width: 100%;
+        }
+        .contactlogo2 {
+            width: 65px;
         }
     }
-}
-.contactnet{
-    height: 450px;
-    margin: 20px 0;
 }
 
 
@@ -290,35 +343,87 @@ footer{
 
 
 // RESPONSIVENESS
-@media only screen and (max-width: 678px) {
+@media only screen and (max-width: 768px) {
+    .textCenterMbl{
+        text-align: center;
+    }
+    .contactnetbg{
+        &:before{  
+            background-image: url(../src/imgs/contact-us-mobile.png);
+        }
+    }
+    .contactUsContent{
+        padding-top: 2rem;
+        .links img {
+            width: 36px;
+        }
+        button {
+            padding: 9px 27px;
+            font-size: 18px;
+            width: 100%;
+        }
+        h5 {
+            font-size: 21px;
+        }
+        .contacticons{
+                text-align: center;
+                h5{
+                    font-size: 19px;
+                }
+                li{
+                    margin-bottom: 0;
+                }
+            .contactlogo2{
+                width: 67px;
+            }
+        }
+        .contactnet{
+            height: 354px;
+            margin: 0px 0;
+            &:after {
+              
+                top: -100%;
+                bottom: -24%;
+                background-size: cover;
+                background-position-x: center;
+            }
+        }
+    } 
     .gifBg {
         background-image: url(./imgs/indexgif.gif);
         top: -21%;
         position: absolute;
-        height: 220px;
+        height: 200px;
         background-size: 100% 100%;
         z-index: -2;
     }
-.bgmain{
-    // background-image: url(../src/imgs/Backgroundindexmbl.png);
-    background-image: none;
-    position: relative;
-    &:before {
-        background-image: url(./imgs/Backgroundindexmbl.png);
-        opacity: 0.8;
-        position: absolute;
-        content: "";
-        z-index: -1;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-size: 100%;
-        width: 100%;
-        // height: 100vh;
+    .bgmain{
+        background-image: none;
+        position: relative;
+        &:before {
+            background-image: url(./imgs/Backgroundindexmbl.png);
+            opacity: 0.8;
+            position: absolute;
+            content: "";
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-size: 100%;
+            width: 100%;
+        }
+        .headerbar{
+            padding: 10.6rem 0 0rem;
+        }
     }
     .headerbar{
-        padding: 8.5rem 0 0.5rem;
+        .d-none-desktop{
+            display: block;
+        }
+        .d-none-mbl{
+            display: none;
+        }
     }
     .navbar{
         a{
@@ -328,34 +433,33 @@ footer{
             background-image: url(../src/imgs/menu.png);
         }
     }
-    .d-none-mbl{
-        display: none;
-    }
-    .d-none-desktop{
-        display: block;
-    }
     .welcomTitle{
         span{
             display: none;
         }
     }
     .banner {
+        height: 482px;
         h1 {
             line-height: 1.2;
-            font-size: 3.3rem;
+            font-size: 6rem;
             span {
-                font-size: 19px;
+                font-size: 25px;
             }
         }
+        .welcomTitle {
+            letter-spacing: 29px;
+            font-size: 17px;
+        }
         .leftGif,.rightGif{display: none;}
-    }
-    .bannerText {
-        font-size: 14px;
+        .bannerText {
+            font-size: 16px;
+        }
     }
     .about {
-        p {
-            width: 77%;
-            font-size: 14px;
+        p {      
+            width: 46%;
+            font-size: 16px;
        }
     }
     .auditByCover {
@@ -365,10 +469,7 @@ footer{
         background-size: 100%;
     }
     .about{
-        height: 225px;
-    }
-    .banner {
-        height: 292px;
+        height: 275px;
     }
     .centerContent {
         width:88%;
@@ -389,7 +490,7 @@ footer{
             background-image: url(../src/imgs/Roadmap3mbl.png);
         }
         h1 {
-            font-size: 44px;
+            font-size: 54px;
             text-transform: uppercase;
         }
         h4 {
@@ -401,7 +502,7 @@ footer{
             padding: 1.2rem 0 1rem;
         }
         .roadmapicon1 {
-            right: -17%;
+            right: -6%;
             width: 203px;
         }
         button {
@@ -419,17 +520,17 @@ footer{
         .roadmapicon2 {
             border-radius: 0;
             width: 172px;
-            top: 0;
-            left: -16%;
+            top: 6px;
+            left: -6%;
         }
     }
     .auditBy {
         text-align: center;
         background-image: url(../src/imgs/Auditedbymbl.png);
         background-size: 100% 100%;
-        margin-top: 90px;
+        margin-top: 156px;
         h1{
-            font-size: 32px;
+            font-size: 80px;
         }
         button {
             place-self: center;
@@ -438,11 +539,11 @@ footer{
             margin-bottom: 2.5rem;
         }
         img {
-            width: 27%;
+            width: 17%;
             margin: 17px 0;
         }
         .KudelskiSecurity {
-            width: 82%;
+            width: 42%;
         }
     }
     footer {
@@ -484,5 +585,67 @@ footer{
         }
     }
 }
-
+@media only screen and (max-width: 575px) {
+    .contactUsContent{
+        h1 {
+            font-size: 54px;
+        }
+        h5{
+            font-size: 16px;
+        }        
+        .contacticons{
+            .contactlogo2{
+                width: 44px;
+            }
+        }
+    }
+    .headerbar{
+        padding: 2.2rem 0 0.5rem;
+    }
+    .feature {        
+        .roadmapicon1 {
+            right: -17%;
+        }
+        .roadmapicon2 {
+            top: 0;
+            left: -16%;
+        }
+        h1 {
+            font-size: 44px;
+        }
+    }
+    .banner {
+        height: 292px;
+        h1 {
+            font-size: 3.3rem;
+            span {
+                font-size: 19px;
+            }
+        }
+        .welcomTitle {
+            letter-spacing: 14px;
+            font-size: 14px;
+        }
+        .bannerText {
+            font-size: 14px;
+        }
+    }
+    .auditBy {
+        margin-top: 90px;
+        h1{
+            font-size: 36px;
+        }
+        img {
+            width: 27%;
+            margin: 17px 0;
+        }
+        .KudelskiSecurity {
+            width: 82%;
+        }
+    }
+    .about {
+        p {
+            width: 77%;
+        }
+    }
 }
