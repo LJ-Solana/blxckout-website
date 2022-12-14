@@ -24,14 +24,15 @@ export const Layout = (props) => {
             <div className='headerbar centerContent'>
             <Navbar expand="lg">
               <Container>
-                <Navbar.Brand href="#home" className='d-none-mbl'><img src={logo} alt="missing" /></Navbar.Brand>
+                <Navbar.Brand href="/" className='d-none-mbl'><img src={logo} alt="missing" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Brand href="#home" className='d-none-desktop'><img src={logo} alt="missing" /></Navbar.Brand>
+                <Navbar.Brand href="/" className='d-none-desktop'><img src={logo} alt="missing" /></Navbar.Brand>
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="ms-auto">
                     <Nav.Link href="#home">Ecosystem</Nav.Link>
                     <Nav.Link href="#home">NFT</Nav.Link>
                     <Nav.Link href="#home">Adopt</Nav.Link>
+                    <Nav.Link href="/Contact">Contact Us</Nav.Link>
                     <Nav.Link href="#link" className='wallet'>Connect wallet</Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
@@ -50,10 +51,10 @@ export const Layout = (props) => {
                             <h1 className='fw-bold'>Need more help?</h1>
                             <button className='mt-3 fw-bold'>READ FAQ  <HiArrowUpRight/></button>
                         </Col>
-                        <Col md={3} xs={12} className="text-center">
-                            <img src={Bramah} alt="missing" />    
+                        <Col md={3} xs={12} className="text-center align-self-center">
+                            <img src={Bramah} className="auditLogo1" alt="missing" />    
                         </Col>
-                        <Col md={3} xs={12}>
+                        <Col md={3} xs={12} className="align-self-center">
                             <img src={KudelskiSecurity} className="KudelskiSecurity" alt="missing" />
                         </Col>
                     </Row>

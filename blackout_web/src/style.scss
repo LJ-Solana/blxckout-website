@@ -107,7 +107,7 @@ footer{
         place-self: flex-start;
     }
     .KudelskiSecurity{
-        width: 100%;
+        width: 77%;
     }
 }
 .auditByCover{
@@ -188,7 +188,10 @@ footer{
 }
 .bgmain{
     background-image: url(../src/imgs/Backgroundindex.png);
-    background-size: 100%;
+    background-size: 100% 100%;
+}
+.auditLogo1{
+    width: 23%;
 }
 .headerbar{
     padding: 3rem 0 0.5rem;
@@ -332,6 +335,9 @@ footer{
             width: 65px;
         }
     }
+}
+.align-self-center{
+    align-self: center;
 }
 
 

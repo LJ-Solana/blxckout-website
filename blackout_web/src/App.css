@@ -115,7 +115,7 @@ footer .socialiconsend {
   place-self: flex-start;
 }
 .auditBy .KudelskiSecurity {
-  width: 100%;
+  width: 77%;
 }
 
 .auditByCover {
@@ -197,7 +197,11 @@ footer .socialiconsend {
 
 .bgmain {
   background-image: url(../src/imgs/Backgroundindex.png);
-  background-size: 100%;
+  background-size: 100% 100%;
+}
+
+.auditLogo1 {
+  width: 23%;
 }
 
 .headerbar {
@@ -337,6 +341,10 @@ footer .socialiconsend {
 }
 .contactUsContent .contacticons .contactlogo2 {
   width: 65px;
+}
+
+.align-self-center {
+  align-self: center;
 }
 
 @media only screen and (max-width: 768px) {
