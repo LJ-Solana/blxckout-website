@@ -9,7 +9,7 @@
 }
 @font-face {
   font-family: "BoldFont";
-  src: local("BoldFont"), url(./gilroy-fontFamily/Gilroy-Black.ttf);
+  src: local("BoldFont"), url(./gilroy-fontFamily/Gilroy-SemiBold.ttf);
 }
 .textPink {
   color: #BB00FF;
@@ -347,12 +347,222 @@ footer .socialiconsend {
   align-self: center;
 }
 
+.roadmapdetail {
+  padding: 15px 0;
+}
+.roadmapdetail h1 {
+  font-family: "BoldFont";
+  font-size: 99px;
+}
+.roadmapdetail h1 span {
+  font-size: 35px;
+}
+.roadmapdetail .r1img {
+  width: 41%;
+}
+
+a.carousel-control-next, a.carousel-control-prev {
+  display: none;
+}
+
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #a900e6;
+}
+
+.carousel-indicators {
+  bottom: -4%;
+}
+
+.bannerx {
+  padding: 50px 0 70px;
+}
+
+.gifx {
+  padding: 2.3rem 0 3rem;
+}
+
+.nxdex {
+  padding: 100px 0 80px;
+}
+.nxdex img {
+  width: 9%;
+}
+
+.detailbg {
+  position: relative;
+}
+.detailbg:before {
+  opacity: 0.7;
+  position: absolute;
+  content: "";
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: url(../src/imgs/detailbg.png);
+  background-size: 100% 100%;
+}
+.detailbg .bgmask1 {
+  background-image: url(../src/imgs/mask1.png);
+  padding: 35px;
+  height: 100%;
+  border-radius: 40px;
+}
+.detailbg .bgmask2 {
+  background-image: url(../src/imgs/mask2.png);
+  padding: 35px;
+  height: 100%;
+  border-radius: 40px;
+}
+.detailbg .bgmask3 {
+  background-image: url(../src/imgs/mask3.png);
+  padding: 35px;
+  height: 100%;
+  border-radius: 40px;
+}
+.detailbg .bgmask4 {
+  margin: 34px 0;
+  background-image: url(../src/imgs/mask4.png);
+  padding: 35px;
+  border-radius: 40px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.detailbg .bgmask4 img {
+  height: 145px;
+  width: 145px;
+}
+.detailbg .bgmask {
+  font-size: 15px;
+}
+.detailbg .bgmask img {
+  width: 84px;
+  height: 84px;
+}
+.detailbg .blockh5 {
+  font-family: "BoldFont";
+  font-size: 26px;
+}
+
+.downloadimg {
+  background-image: url(./imgs/downloadbg.png);
+  background-size: 100% 100%;
+  border-radius: 20px;
+  padding: 20px 15px;
+  margin: 20px 0;
+}
+.downloadimg img {
+  width: 24%;
+  height: 43px;
+  margin: 0 6px;
+}
+
+.nxdeblock1 {
+  background-image: url(./imgs/nxde1.png);
+}
+
+.nxdeblock2 {
+  background-image: url(./imgs/nxde2.png);
+}
+
+.nxdeblock3 {
+  background-image: url(./imgs/nxde3.png);
+}
+
+.nxdeglow {
+  position: relative;
+  padding-top: 101px;
+}
+.nxdeglow:before {
+  background-image: url(./imgs/glowbg.png);
+  position: absolute;
+  top: -30%;
+  bottom: 0;
+  content: "";
+  left: 0;
+  background-size: 100% 100%;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.nxdebg .row {
+  align-items: center;
+}
+.nxdebg .nxdeblock {
+  border-radius: 61px;
+  padding: 25px 10px 30px;
+  margin: 40px 0;
+}
+.nxdebg .nxdeblock img {
+  width: 110px;
+  height: 110px;
+}
+.nxdebg .nxdeblock p {
+  font-size: 14px;
+}
+
+.mobileView {
+  display: none;
+}
+
+.text-end-div {
+  text-align: right;
+}
+
+.w-50-mbl {
+  width: 50%;
+}
+
 @media only screen and (max-width: 768px) {
-  .textCenterMbl {
+  .textCenterMbl, .text-end-div, .bannerx {
     text-align: center;
+  }
+  .detailbg {
+    position: relative;
+  }
+  .detailbg:before {
+    opacity: 0.7;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url(../src/imgs/product-pg-mobile.png);
+    background-size: 100% 100%;
+  }
+  .w-50-mbl, .w-80mbl {
+    width: 86%;
+    margin: 0 auto;
+  }
+  .roadmapdetail .r1img {
+    width: 40%;
+    margin-bottom: 41px;
   }
   .contactnetbg:before {
     background-image: url(../src/imgs/contact-us-mobile.png);
+  }
+  .gifx img {
+    width: 100%;
+  }
+  .mobileView {
+    display: block;
+  }
+  .desktopView {
+    display: none;
+  }
+  .nxdex img {
+    width: 37%;
   }
   .contactUsContent {
     padding-top: 2rem;
@@ -467,7 +677,7 @@ footer .socialiconsend {
     height: 275px;
   }
   .centerContent {
-    width: 88%;
+    width: 86%;
   }
   .feature {
     padding: 2.6em 2rem 2.5rem 2.3rem;
@@ -591,6 +801,10 @@ footer .socialiconsend {
   }
   .contactUsContent .contacticons .contactlogo2 {
     width: 44px;
+  }
+  .roadmapdetail .r1img {
+    width: 57%;
+    margin-bottom: 41px;
   }
   .headerbar {
     padding: 2.2rem 0 0.5rem;

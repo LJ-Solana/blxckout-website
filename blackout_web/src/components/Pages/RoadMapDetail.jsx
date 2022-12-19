@@ -6,11 +6,13 @@ import { Synx } from './RoadMap/Synx'
 
 export const RoadMapDetail = () => {
   return (
-    <div>
+    <div className='detailbg '>
       <Layout>
-        <Synx/>
-        <Nxde/>
-        <ServerX/>
+        <div className=''>
+          <Synx/>
+          <Nxde/>
+          <ServerX/>
+        </div>
       </Layout>
     </div>
   )
