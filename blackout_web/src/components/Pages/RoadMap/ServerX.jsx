@@ -28,16 +28,16 @@ const slide = [
 ]
 export const ServerX = () => {
   return (
-    <div className='centerContent text-white roadmapdetail'>
+    <div className='centerContent text-white roadmapdetail' id='SERVEx'>
     <Row className='bannerx pb-2'>
         <Col md={6} xs={12} className="text-end-div order-sm-first order-lg-last order-md-last order-first"> 
           <img src={lock} alt="missing"  className='r1img'/>
         </Col>
         <Col md={6} xs={12} className="order-sm-last order-md-first order-last order-lg-first">
-        <h1 className='fw-bold'>SYNX<span className='textPink'><GoPrimitiveDot/></span> </h1>
+        <h1 className='fw-bold'>SERVE-X<span className='textPink'><GoPrimitiveDot/></span> </h1>
           <p className='mb-3'>SYNX is a revolutionary data storage application built on the Solana blockchain. Using GenesysGo's Shadow Drive, this new tech connects seamlessly to the blockchain, thus enabling your data to be owned, used and controlled by you.
           </p>
-          <p> Traditional storage methods use a single point of access and is stored one their own servers. SYNX gives you back full control of the most valuable commodity there is, your personal data.</p>
+          <p>  Traditional storage methods use a single point of access and is stored one their own servers. SYNX gives you back full control of the most valuable commodity there is, your personal data.</p>
         </Col>
     </Row>
     <div className="mobileView text-white text-center">

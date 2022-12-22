@@ -12,6 +12,13 @@ import KudelskiSecurity from '../../imgs/KudelskiSecurity.png'
 import gif from '../../imgs/animation.gif'
 import { NavLink } from 'react-router-dom'
 
+function Mailto({ email, subject, body, ...props }) {
+  return (
+    <a href={`mailto:${email}?subject=${subject || ""}&body=${body || ""}`}>
+      {props.children}
+    </a>
+  );
+}
 
 export const Contact = () => {
   return (
@@ -34,13 +41,20 @@ export const Contact = () => {
               <ul className='links'>
                 <Row>
                    <Col xs={2} md={1} className="px-0"> <img src={icon1} alt="missing" /> </Col>
-                   <Col xs={10} md={11}> <NavLink to="/"> https://www.blxckout.xyz/</NavLink> </Col>
+                   <Col xs={10} md={11} className="align-self-center"> <a href="https://www.blxckout.xyz/"> https://www.blxckout.xyz/</a> </Col>
                    <Col xs={2} md={1} className="px-0"> <img src={icon2} alt="missing" /> </Col>
-                   <Col xs={10} md={11}> <NavLink to="/"> Ij@blxckout.xyz, brood@blxckout.xyz</NavLink> </Col>
+                   <Col xs={10} md={11} className="align-self-center"> 
+                        <Mailto email="Ij@blxckout.xyz" subject="Hello" body="Hello world!">                          
+                            Ij@blxckout.xyz, 
+                        </Mailto>
+                        <Mailto email="brood@blxckout.xyz" subject="Hello" body="Hello world!">                          
+                            brood@blxckout.xyz
+                        </Mailto>
+                    </Col>
                    <Col xs={2} md={1} className="px-0"> <img src={icon3} alt="missing" /> </Col>
-                   <Col xs={10} md={11}> <NavLink to="/"> blckout_nft-BLXCKOUT, synx_xyz-SERVE-X, TheNxde-The NXDE</NavLink> </Col>
+                   <Col xs={10} md={11} className="align-self-center"> <a href="https://twitter.com/blxckout_nft"> blxckout</a> </Col>
                    <Col xs={2} md={1} className="px-0"> <img src={icon4} alt="missing" /> </Col>
-                   <Col xs={10} md={11}> <NavLink to="/"> blxckout</NavLink> </Col>
+                   <Col xs={10} md={11} className="align-self-center"> <a href="https://discord.gg/blxckout"> blxckout</a> </Col>
                 </Row>
               </ul>
               <ul className='contacticons text-center d-flex row'>

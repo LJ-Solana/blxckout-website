@@ -16,6 +16,9 @@ $Fbold: "BoldFont";
 .textPink{
     color: $lightcolor;
 }
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: white;
+}
 body{
     background: rgb(10, 10, 10);
     font-family: "BasicFont";
@@ -35,6 +38,10 @@ footer{
         color: #ffffffc2;
         margin: 19px 0;
         font-size: 15px;
+    }
+    a{
+        text-decoration: none;
+        color: #ffffffc2;
     }
     small{
         font-size: 12px;
@@ -299,6 +306,7 @@ footer{
         font-size: 14px;
         border-radius: 9px;
         margin: 8px 0;
+        color: #d2d2d2;
     }
     button{
         border-radius: 26px;
@@ -446,7 +454,7 @@ a.carousel-control-next,a.carousel-control-prev{
     margin: 20px 0;
     img {    
         width: 24%;
-        height: 43px;
+        height: 100%;
         margin: 0 6px;
     }
 }
@@ -501,7 +509,10 @@ a.carousel-control-next,a.carousel-control-prev{
 .w-50-mbl{
     width: 50%;
 }
-
+input:focus-visible,
+textarea:focus-visible {
+    outline: none;
+}
 
 
 
@@ -509,7 +520,25 @@ a.carousel-control-next,a.carousel-control-prev{
 
 
 // RESPONSIVENESS
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1020px) {
+    .banner{
+        .leftGif {
+        left: -14%;
+        top: 27%;
+    }h1 {
+        font-size: 4.4rem;
+        margin-bottom: 1.7rem;
+    }.welcomTitle {
+        letter-spacing: 12px;
+        font-size: 13px;
+    }
+        .rightGif {
+            right: -15%;
+            top: 27%;
+        }
+    }
+}
+ @media only screen and (max-width: 768px) {
     .textCenterMbl,.text-end-div,.bannerx{
         text-align: center;
     }

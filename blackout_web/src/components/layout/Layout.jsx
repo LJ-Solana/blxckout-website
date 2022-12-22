@@ -29,7 +29,7 @@ export const Layout = (props) => {
                 <Navbar.Brand href="/" className='d-none-desktop'><img src={logo} alt="missing" /></Navbar.Brand>
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="ms-auto">
-                    <Nav.Link href="#home">Ecosystem</Nav.Link>
+                    <Nav.Link href="/RoadMapDetail">Ecosystem</Nav.Link>
                     <Nav.Link href="#home">NFT</Nav.Link>
                     <Nav.Link href="#home">Adopt</Nav.Link>
                     <Nav.Link href="/Contact">Contact Us</Nav.Link>
@@ -81,7 +81,7 @@ export const Layout = (props) => {
                                 <h6 className='fw-bold'>Blackout</h6>
                                 <li>About us</li>
                                 <li>Roadmap</li>
-                                <li>Markets</li>
+                                <li> <a href="https://hyperspace.xyz/collection/5Ts39fU956Z8PUtDYHQHLYZJa2Yvi97k7xVSFh6WfVf"> Markets</a></li>
                                 <li>Go to App  <HiArrowUpRight/></li>
                             </ul>
                         </Col>
@@ -89,7 +89,7 @@ export const Layout = (props) => {
                             <ul>
                                 <h6 className='fw-bold'>Resources</h6>
                                 <li>Litepaper  <HiArrowUpRight/></li>
-                                <li>Documentations  <HiArrowUpRight/></li>
+                                <li> <a href="docs.blxckout.xyz">Documentations  <HiArrowUpRight/> </a> </li>
                                 <li>FAQ <HiArrowUpRight/></li>
                             </ul>
                         </Col>

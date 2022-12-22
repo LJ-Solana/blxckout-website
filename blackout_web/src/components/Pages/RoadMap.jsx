@@ -6,6 +6,8 @@ import icon1 from '../../imgs/lockicon.png'
 import icon2 from '../../imgs/layers.png'
 import icon3 from '../../imgs/maskicon.png'
 import { GoPrimitiveDot } from 'react-icons/go';
+import { NavLink } from 'react-router-dom'
+// import { Synx } from './RoadMap/Synx'
 
 const roadMap = [
   {
@@ -15,6 +17,7 @@ const roadMap = [
     vector: vector1,
     renderingclass: "roadmapicon1",
     icon: icon1,
+    redirect: '/RoadMapDetail/#synx'
   },
   {
     title: "The NXDE",
@@ -23,6 +26,7 @@ const roadMap = [
     vector: vector2,
     renderingclass: "roadmapicon2",
     icon: icon2,
+    redirect: '/RoadMapDetail/#nxde'
   },
   {
     title: "Serve-X",
@@ -31,6 +35,7 @@ const roadMap = [
     vector: vector3,
     renderingclass: "roadmapicon3",
     icon: icon3,
+    redirect: '/RoadMapDetail/#SERVEx'
   }
 ]
 
@@ -45,7 +50,10 @@ export const RoadMap = () => {
               <h1 className='fw-bold'>{roadMapData.title}<span className='textPink'><GoPrimitiveDot/></span> </h1>
               <h4 className='textPink'>{roadMapData.des}</h4>
               <p className='feDes'>{roadMapData.content}</p>
-              <button><img src={roadMapData.vector} alt="missing" /> LEARN MORE</button>
+              <button><img src={roadMapData.vector} alt="missing" /> 
+                <a href={roadMapData.redirect}>
+                LEARN MORE
+                </a></button>
               <img src={roadMapData.icon} className={roadMapData.renderingclass} alt="missing" />
             </div>
           </div>
