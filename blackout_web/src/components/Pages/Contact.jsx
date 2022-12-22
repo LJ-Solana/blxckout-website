@@ -52,7 +52,7 @@ export const Contact = () => {
                         </Mailto>
                     </Col>
                    <Col xs={2} md={1} className="px-0"> <img src={icon3} alt="missing" /> </Col>
-                   <Col xs={10} md={11} className="align-self-center"> <a href="https://twitter.com/blxckout_nft"> blxckout</a> </Col>
+                   <Col xs={10} md={11} className="align-self-center"> <a href="https://twitter.com/blxckout_nft"> BLXCKOUT</a> </Col>
                    <Col xs={2} md={1} className="px-0"> <img src={icon4} alt="missing" /> </Col>
                    <Col xs={10} md={11} className="align-self-center"> <a href="https://discord.gg/blxckout"> blxckout</a> </Col>
                 </Row>

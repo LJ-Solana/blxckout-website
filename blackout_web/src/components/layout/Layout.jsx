@@ -17,6 +17,12 @@ import Bramah from '../../imgs/Bramah.png'
 import KudelskiSecurity from '../../imgs/KudelskiSecurity.png'
 
 export const Layout = (props) => {
+    const goToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
   return (
     <div>
         {
@@ -70,7 +76,7 @@ export const Layout = (props) => {
                         <Col md={3}></Col>
                         <Col md={5} xs={12}>
                             <div className="emailsub">
-                                <input type="text" name="Email" placeholder='your email address' id="emailaddress" />
+                                <input type="text" name="user_email" placeholder='Your Email Address' id="emailaddress" autoComplete='false' aria-autocomplete='none' />
                                 <button> <p >SUBMIT</p> <ImArrowRight2/> </button>
                             </div>
                         </Col>
@@ -79,8 +85,9 @@ export const Layout = (props) => {
                         <Col md={3} sm={6} xs={6}>
                             <ul>
                                 <h6 className='fw-bold'>Blackout</h6>
-                                <li>About us</li>
-                                <li>Roadmap</li>
+                                <li style={{cursor:"pointer"}} onClick={() => goToTop()}>About us</li>
+                                {/* <li>Roadmap</li> */}
+                                <li> <a href="/RoadMapDetail">Roadmap</a></li>
                                 <li> <a href="https://hyperspace.xyz/collection/5Ts39fU956Z8PUtDYHQHLYZJa2Yvi97k7xVSFh6WfVf"> Markets</a></li>
                                 <li>Go to App  <HiArrowUpRight/></li>
                             </ul>

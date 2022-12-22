@@ -26,10 +26,10 @@ const slide = [
     vector: icon3,
   }
 ]
-export const Nxde = () => {
+export const Nxde = ({innerRef}) => {
   return (
     <>
-      <div className='text-center text-white roadmapdetail nxdex' id='nxde'>
+      <div ref={innerRef} className='text-center text-white roadmapdetail nxdex' id='nxde'>
         <img src={blocks} alt="missing" />
         <h1 className='fw-bold py-2 mt-2'>NXDE<span className='textPink'><GoPrimitiveDot/></span> </h1>
         <div className="w-50-mbl m-auto">

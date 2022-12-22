@@ -26,9 +26,10 @@ const slide = [
     vector: icon3,
   }
 ]
-export const ServerX = () => {
+export const ServerX = ({innerRef}) => {
+  
   return (
-    <div className='centerContent text-white roadmapdetail' id='SERVEx'>
+    <div ref={innerRef} className='centerContent text-white roadmapdetail' id='SERVEx'>
     <Row className='bannerx pb-2'>
         <Col md={6} xs={12} className="text-end-div order-sm-first order-lg-last order-md-last order-first"> 
           <img src={lock} alt="missing"  className='r1img'/>
