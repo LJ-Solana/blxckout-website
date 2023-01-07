@@ -9,6 +9,7 @@ import icon4 from '../../../imgs/micon4.png'
 import download1 from '../../../imgs/download1.png'
 import download2 from '../../../imgs/download2.png'
 import download3 from '../../../imgs/download3.png'
+import eco from '../../../imgs/eco-gif.gif'
 
 const slide = [
   {
@@ -39,17 +40,22 @@ const slide = [
 export const Synx = () => {
   return (
     <div className='centerContent text-white roadmapdetail' id='synx'>
-    <Row className='bannerx'>
-        <Col md={6} xs={12} className="text-end-div order-sm-first order-lg-last order-md-last order-first"> 
-          <img src={lock} alt="missing"  className='r1img'/>
-        </Col>
-        <Col md={6} xs={12} className="order-sm-last order-md-first order-last order-lg-first">
-        <h1 className='fw-bold'>SYNX<span className='textPink'><GoPrimitiveDot/></span> </h1>
-          <p className='mb-3'>SYNX is a revolutionary data storage application built on the Solana blockchain. Using GenesysGo's Shadow Drive, this new tech connects seamlessly to the blockchain, thus enabling your data to be owned, used and controlled by you.
-          </p>
-          <p> Traditional storage methods use a single point of access and is stored one their own servers. SYNX gives you back full control of the most valuable commodity there is, your personal data.</p>
-        </Col>
-    </Row>
+      <div className="">
+          <div className="blinking"></div>
+          <Row className='bannerx ecogif'>
+            {/* <img src={eco} alt="missing" className="gifblinkl" />
+            <img src={eco} alt="missing" className="gifblinkr" /> */}
+              <Col md={6} xs={12} className="text-end-div order-sm-first order-lg-last order-md-last order-first"> 
+                <img src={lock} alt="missing"  className='r1img'/>
+              </Col>
+              <Col md={6} xs={12} className="order-sm-last order-md-first order-last order-lg-first">
+              <h1 className='fw-bold'>SYNX<span className='textPink'><GoPrimitiveDot/></span> </h1>
+                <p className='mb-3'>SYNX is a revolutionary data storage application built on the Solana blockchain. Using GenesysGo's Shadow Drive, this new tech connects seamlessly to the blockchain, thus enabling your data to be owned, used and controlled by you.
+                </p>
+                <p> Traditional storage methods use a single point of access and is stored one their own servers. SYNX gives you back full control of the most valuable commodity there is, your personal data.</p>
+              </Col>
+          </Row>
+      </div>
       <div className="mobileView text-center">
           <Carousel>
             {slide.map((slides,index)=>{

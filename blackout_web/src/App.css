@@ -15,6 +15,11 @@
   color: #BB00FF;
 }
 
+.space-between {
+  align-items: center;
+  justify-content: space-between;
+}
+
 .navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
   color: white;
 }
@@ -416,7 +421,7 @@ a.carousel-control-next, a.carousel-control-prev {
   bottom: 0;
   width: 100%;
   background-image: url(../src/imgs/detailbg.png);
-  background-size: 100% 100%;
+  background-size: 100% 101%;
 }
 .detailbg .bgmask1 {
   background-image: url(../src/imgs/mask1.png);
@@ -535,6 +540,187 @@ textarea:focus-visible {
   outline: none;
 }
 
+.ecogif {
+  position: relative;
+}
+
+.ecogif:after {
+  background-image: url(imgs/eco-gif.gif);
+  content: "";
+  position: absolute;
+  z-index: -2;
+  top: 7%;
+  bottom: 15%;
+  left: -19%;
+  background-repeat: no-repeat;
+  width: 27%;
+  mix-blend-mode: luminosity;
+}
+
+.ecogif:before {
+  background-image: url(imgs/eco-gif.gif);
+  content: "";
+  position: absolute;
+  z-index: -2;
+  top: 7%;
+  bottom: 15%;
+  right: -11%;
+  background-repeat: no-repeat;
+  width: 27%;
+  mix-blend-mode: luminosity;
+}
+
+.ecogifn {
+  position: relative;
+}
+
+.ecogifn:after {
+  background-image: url(imgs/eco-gif.gif);
+  content: "";
+  position: absolute;
+  z-index: -2;
+  top: 7%;
+  bottom: 15%;
+  left: -2%;
+  background-repeat: no-repeat;
+  width: 100%;
+  mix-blend-mode: luminosity;
+}
+
+.bannersx {
+  padding: 1rem 0px 2rem;
+}
+
+.ecogifn:before {
+  background-image: url(imgs/eco-gif.gif);
+  content: "";
+  position: absolute;
+  z-index: -2;
+  top: 7%;
+  bottom: 17%;
+  right: 0%;
+  background-repeat: no-repeat;
+  width: 19%;
+  mix-blend-mode: luminosity;
+}
+
+.longslide .slick-list {
+  height: 507px;
+  margin-top: 2rem;
+}
+.longslide .slick-slide {
+  background: #23092D;
+  padding: 15px;
+  border-radius: 14px;
+  margin: 10px;
+}
+
+.f-14 {
+  font-size: 14px;
+}
+
+.longslide button.slick-arrow.slick-prev, .longslide button.slick-arrow.slick-next {
+  display: none !important;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.viewm {
+  background: #404040;
+  color: white;
+  font-size: 13px;
+  padding: 8px 22px;
+  border-radius: 9px;
+  font-weight: bold;
+}
+
+.nftcenter {
+  width: 90%;
+  margin: 0 0 0 auto;
+}
+.nftcenter .slick-slider.slick-initialized {
+  width: 97%;
+}
+.nftcenter .slick-next:before {
+  display: none;
+}
+.nftcenter .slick-prev:before {
+  font-family: "slick";
+  font-size: 21px;
+  line-height: 1;
+  border-radius: 100%;
+  background: #7f00ad;
+  opacity: 1 !important;
+  box-shadow: -1px 2px 14px 4px #71039c;
+  border: 9px solid #490064;
+  outline: none;
+  color: #490064;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.nftcenter .slick-prev {
+  left: 60%;
+  z-index: 1;
+}
+
+.socialnft {
+  display: flex;
+}
+
+.socialnft a {
+  background: #490064;
+  display: flex;
+  color: #a900e6;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 22px;
+  padding: 4px 10px;
+  align-items: center;
+  margin: 22px 8px 22px 0px;
+}
+
+.socialnft a img {
+  height: 13px;
+  object-fit: cover;
+  margin: 0 4px;
+}
+
+.longslide .hash span {
+  font-size: 10px;
+}
+.longslide .hash button {
+  line-height: 0;
+  font-size: 14px;
+}
+
+.detailbtn {
+  background: transparent;
+  color: #bb00ff;
+  border: 1.5px solid #bb00ff;
+  padding: 0 6px;
+  height: 26px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+.buybtn {
+  border: 0;
+  background: rgba(165, 165, 165, 0.2901960784);
+  color: white;
+  padding: 0 18px;
+  font-size: 11px;
+  height: 34px;
+  border-radius: 7px;
+}
+
+.height08 {
+  line-height: 0.8;
+}
+
 @media only screen and (max-width: 1020px) {
   .banner .leftGif {
     left: -14%;
@@ -555,6 +741,13 @@ textarea:focus-visible {
 }
 @media only screen and (max-width: 768px) {
   .textCenterMbl, .text-end-div, .bannerx {
+    text-align: center;
+  }
+  .ecogif:after, .ecogifn:after, .ecogif:before {
+    display: none;
+  }
+  .roadmapdetail h1 {
+    font-size: 63px;
     text-align: center;
   }
   .detailbg {

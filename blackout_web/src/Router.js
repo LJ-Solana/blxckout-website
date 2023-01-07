@@ -2,6 +2,7 @@ import React from 'react'
 import {Routes, Route} from 'react-router-dom';
 import { Contact } from './components/Pages/Contact';
 import { MainPage } from './components/Pages/MainPage';
+import { NFT } from './components/Pages/NFT/NFT';
 import { RoadMapDetail } from './components/Pages/RoadMapDetail';
 
 export const Router = () => {
@@ -10,6 +11,7 @@ export const Router = () => {
         <Route path='/' element={<MainPage/>} />   
         <Route path='/Contact' element={<Contact/>} />   
         <Route path='/RoadMapDetail' element={<RoadMapDetail/>} />   
+        <Route path='/nft' element={<NFT/>} />   
     </Routes>
 
   )

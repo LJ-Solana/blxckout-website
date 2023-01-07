@@ -29,7 +29,7 @@ const slide = [
 export const ServerX = () => {
   return (
     <div className='centerContent text-white roadmapdetail' id='SERVEx'>
-    <Row className='bannerx pb-2'>
+    <Row className='bannersx ecogif'>
         <Col md={6} xs={12} className="text-end-div order-sm-first order-lg-last order-md-last order-first"> 
           <img src={lock} alt="missing"  className='r1img'/>
         </Col>

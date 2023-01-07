@@ -29,12 +29,14 @@ const slide = [
 export const Nxde = () => {
   return (
     <>
-      <div className='text-center text-white roadmapdetail nxdex' id='nxde'>
-        <img src={blocks} alt="missing" />
-        <h1 className='fw-bold py-2 mt-2'>NXDE<span className='textPink'><GoPrimitiveDot/></span> </h1>
-        <div className="w-50-mbl m-auto">
-          <p className='mb-3'>The NXDE (or NXDE) is Blxckout’s solution to long waiting times, failed minting attempts and slow transaction speeds on Solana.</p>
-          <p> Nodes are expensive and time-consuming to maintain, which is why we’ve decided to take on the heavy lifting, allowing users to concentrate on what matters most, building on the blockchain and engaging with NFTs.</p>
+      <div className='text-center text-white roadmapdetail nxdex ' id='nxde'>
+        <div className="bannerx ecogifn">
+          <img src={blocks} alt="missing" />
+          <h1 className='fw-bold py-2 mt-2'>NXDE<span className='textPink'><GoPrimitiveDot/></span> </h1>
+          <div className="w-50-mbl m-auto">
+            <p className='mb-3'>The NXDE (or NXDE) is Blxckout’s solution to long waiting times, failed minting attempts and slow transaction speeds on Solana.</p>
+            <p> Nodes are expensive and time-consuming to maintain, which is why we’ve decided to take on the heavy lifting, allowing users to concentrate on what matters most, building on the blockchain and engaging with NFTs.</p>
+          </div>
         </div>
       </div>
       <div className="mobileView text-white w-80mbl text-center">
