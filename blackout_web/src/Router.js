@@ -11,7 +11,7 @@ export const Router = () => {
         <Route path='/' element={<MainPage/>} />   
         <Route path='/Contact' element={<Contact/>} />   
         <Route path='/RoadMapDetail' element={<RoadMapDetail/>} />   
-        <Route path='/nft' element={<NFT/>} />   
+        <Route path='/NFT' element={<NFT/>} />   
     </Routes>
 
   )
