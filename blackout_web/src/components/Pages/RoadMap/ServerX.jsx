@@ -29,13 +29,8 @@ const slide = [
 export const ServerX = ({innerRef}) => {
   
   return (
-<<<<<<< HEAD
-    <div className='centerContent text-white roadmapdetail' id='SERVEx'>
+  <div className='centerContent text-white roadmapdetail' id='SERVEx'>
     <Row className='bannersx ecogif'>
-=======
-    <div ref={innerRef} className='centerContent text-white roadmapdetail' id='SERVEx'>
-    <Row className='bannerx pb-2'>
->>>>>>> 5989e182b4e00e94300c735ee1b0de8840d06c16
         <Col md={6} xs={12} className="text-end-div order-sm-first order-lg-last order-md-last order-first"> 
           <img src={lock} alt="missing"  className='r1img'/>
         </Col>
