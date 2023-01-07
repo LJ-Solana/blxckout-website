@@ -17,7 +17,7 @@ const roadMap = [
     vector: vector1,
     renderingclass: "roadmapicon1",
     icon: icon1,
-    redirect: '/RoadMapDetail/#synx'
+    redirect: '/RoadMapDetail/?section=synx'
   },
   {
     title: "The NXDE",
@@ -26,7 +26,7 @@ const roadMap = [
     vector: vector2,
     renderingclass: "roadmapicon2",
     icon: icon2,
-    redirect: '/RoadMapDetail/#nxde'
+    redirect: '/RoadMapDetail/?section=nxde'
   },
   {
     title: "Serve-X",
@@ -35,7 +35,7 @@ const roadMap = [
     vector: vector3,
     renderingclass: "roadmapicon3",
     icon: icon3,
-    redirect: '/RoadMapDetail/#SERVEx'
+    redirect: '/RoadMapDetail/?section=SERVEx'
   }
 ]
 
@@ -51,7 +51,7 @@ export const RoadMap = () => {
               <h4 className='textPink'>{roadMapData.des}</h4>
               <p className='feDes'>{roadMapData.content}</p>
               <button><img src={roadMapData.vector} alt="missing" /> 
-                <a href={roadMapData.redirect}>
+                <a style={{textDecoration:"none", color:"#fff"}} href={roadMapData.redirect}>
                 LEARN MORE
                 </a></button>
               <img src={roadMapData.icon} className={roadMapData.renderingclass} alt="missing" />
