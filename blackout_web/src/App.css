@@ -407,6 +407,53 @@ a.carousel-control-next, a.carousel-control-prev {
   width: 9%;
 }
 
+.nftbg .ecogif:after {
+  background-image: url(./imgs/eco-gif.gif);
+  content: "";
+  position: absolute;
+  z-index: -2;
+  top: 0%;
+  bottom: 15%;
+  left: -4%;
+  height: 45%;
+  background-repeat: no-repeat;
+  width: 27%;
+  mix-blend-mode: luminosity;
+}
+
+.nftbg .ecogif:before {
+  background-image: url(./imgs/eco-gif.gif);
+  content: "";
+  position: absolute;
+  z-index: -2;
+  top: 0%;
+  bottom: 15%;
+  right: -11%;
+  height: 45%;
+  background-repeat: no-repeat;
+  width: 27%;
+  mix-blend-mode: luminosity;
+}
+
+.nftbg {
+  overflow: hidden;
+  background-image: none;
+  position: relative;
+}
+.nftbg:before {
+  opacity: 0.7;
+  position: absolute;
+  content: "";
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: url(../src/imgs/nft.png);
+  background-size: 100% 100%;
+}
+
 .detailbg {
   position: relative;
 }
@@ -608,7 +655,7 @@ textarea:focus-visible {
   height: 507px;
   margin-top: 2rem;
 }
-.longslide .slick-slide {
+.longslide .slick-slide > div {
   background: #23092D;
   padding: 15px;
   border-radius: 14px;
@@ -638,6 +685,7 @@ textarea:focus-visible {
 
 .nftcenter {
   width: 90%;
+  overflow: hidden;
   margin: 0 0 0 auto;
 }
 .nftcenter .slick-slider.slick-initialized {
@@ -743,6 +791,77 @@ textarea:focus-visible {
   .textCenterMbl, .text-end-div, .bannerx {
     text-align: center;
   }
+  .w-80 {
+    width: 100%;
+  }
+  .nftcenter h2 {
+    padding-top: 15px;
+  }
+  .socialnft a {
+    margin: 16px 8px 16px 0px;
+  }
+  .nftcenter {
+    width: 98%;
+  }
+  .nftcenter .slick-initialized .slick-slide {
+    padding-left: 1.9rem;
+  }
+  .longslide {
+    padding: 0 1.3rem;
+  }
+  .nftcenter .slick-next, .longslide .slick-next {
+    right: 6%;
+    z-index: 1;
+  }
+  .nftcenter .slick-prev, .longslide .slick-prev {
+    left: 7%;
+  }
+  .nftcenter .slick-prev, .nftcenter .slick-next, .longslide .slick-prev, .longslide .slick-next {
+    top: 31%;
+  }
+  .nftcenter .longslide h4, .longslide .longslide h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+  }
+  .nftcenter .viewm, .longslide .viewm {
+    font-size: 11px;
+    padding: 6px 12px;
+    border: 0;
+  }
+  .nftcenter .slick-prev:before, .longslide .slick-prev:before {
+    font-family: "slick";
+    font-size: 20px;
+    line-height: 1;
+    border-radius: 100%;
+    background: #7f00ad;
+    opacity: 1 !important;
+    box-shadow: -1px 2px 14px 4px #71039c;
+    border: 0px solid #490064;
+    outline: none;
+    color: #490064;
+    -webkit-font-smoothing: antialiased;
+  }
+  .nftcenter .slick-next:before, .longslide .slick-next:before {
+    font-family: "slick";
+    font-size: 19px;
+    line-height: 1;
+    border-radius: 100%;
+    background: #7f00ad;
+    opacity: 1 !important;
+    box-shadow: -1px 2px 14px 4px #71039c;
+    border: 0px solid #490064;
+    outline: none;
+    color: #490064;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .nftcenter .slick-next:before, .longslide .slick-next:before {
+    display: block;
+  }
+  .longslide button.slick-arrow.slick-prev, .longslide button.slick-arrow.slick-next {
+    display: block !important;
+    z-index: 1;
+  }
   .ecogif:after, .ecogifn:after, .ecogif:before {
     display: none;
   }
@@ -824,6 +943,9 @@ textarea:focus-visible {
     bottom: -24%;
     background-size: cover;
     background-position-x: center;
+  }
+  .nftbg .headerbar {
+    padding: 8.2rem 0 0rem;
   }
   .gifBg {
     background-image: url(./imgs/indexgif.gif);
