@@ -675,7 +675,8 @@ textarea:focus-visible {
 }
 
 .viewm {
-  background: #404040;
+  border: 0;
+  background: #1E1920;
   color: white;
   font-size: 13px;
   padding: 8px 22px;
@@ -695,18 +696,21 @@ textarea:focus-visible {
   display: none;
 }
 .nftcenter .slick-prev:before {
-  font-family: "slick";
-  font-size: 21px;
+  font-size: 13px;
   line-height: 1;
   border-radius: 100%;
-  background: #7f00ad;
+  background: #490064;
   opacity: 1 !important;
   box-shadow: -1px 2px 14px 4px #71039c;
-  border: 9px solid #490064;
+  padding: 0px 2px;
+  border: 10px solid #490064;
   outline: none;
-  color: #490064;
+  color: #a900e6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f053";
 }
 .nftcenter .slick-prev {
   left: 60%;
@@ -810,14 +814,14 @@ textarea:focus-visible {
     padding: 0 1.3rem;
   }
   .nftcenter .slick-next, .longslide .slick-next {
-    right: 6%;
+    right: 4%;
     z-index: 1;
   }
   .nftcenter .slick-prev, .longslide .slick-prev {
-    left: 7%;
+    left: 4%;
   }
   .nftcenter .slick-prev, .nftcenter .slick-next, .longslide .slick-prev, .longslide .slick-next {
-    top: 31%;
+    top: 35%;
   }
   .nftcenter .longslide h4, .longslide .longslide h4 {
     font-size: 1.1rem;
@@ -829,31 +833,39 @@ textarea:focus-visible {
     border: 0;
   }
   .nftcenter .slick-prev:before, .longslide .slick-prev:before {
-    font-family: "slick";
-    font-size: 20px;
+    font-size: 11px;
     line-height: 1;
     border-radius: 100%;
-    background: #7f00ad;
+    box-shadow: none;
+    background: #490064;
     opacity: 1 !important;
-    box-shadow: -1px 2px 14px 4px #71039c;
-    border: 0px solid #490064;
+    padding: 1px 2px;
+    border: 5px solid #490064;
     outline: none;
-    color: #490064;
+    color: #a900e6;
     -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f053";
   }
   .nftcenter .slick-next:before, .longslide .slick-next:before {
-    font-family: "slick";
-    font-size: 19px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f054";
+    font-size: 11px;
+    box-shadow: none;
     line-height: 1;
     border-radius: 100%;
-    background: #7f00ad;
+    background: #490064;
     opacity: 1 !important;
-    box-shadow: -1px 2px 14px 4px #71039c;
-    border: 0px solid #490064;
+    padding: 1px 0px;
+    border: 5px solid #490064;
     outline: none;
-    color: #490064;
+    color: #a900e6;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  }
+  .nftcenter .slick-next, .longslide .slick-next {
+    width: 24px;
   }
   .nftcenter .slick-next:before, .longslide .slick-next:before {
     display: block;
@@ -977,6 +989,7 @@ textarea:focus-visible {
   }
   .headerbar .d-none-desktop {
     display: block;
+    margin-left: 0;
   }
   .headerbar .d-none-mbl {
     display: none;

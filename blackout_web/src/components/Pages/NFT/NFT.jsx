@@ -10,6 +10,7 @@ import Tooltip from 'react-bootstrap/Tooltip';
 import icon1 from '../../../imgs/nfticon1.png'
 import icon2 from '../../../imgs/nfticon2.png'
 import icon3 from '../../../imgs/nfticon3.png'
+// import { CgChevronLeft } from "react-icons/cg";
 
 import { AiFillExclamationCircle } from 'react-icons/ai';
 import { Col, Row } from 'react-bootstrap';

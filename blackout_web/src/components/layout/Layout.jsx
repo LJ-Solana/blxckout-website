@@ -102,8 +102,8 @@ export const Layout = (props) => {
                         </Col>
                         <Col md={4} sm={12} xs={12} className="socialiconsend">
                             <ul className='socialIcons'>
-                                <li> <img src={discord} alt="missing" /> </li>
-                                <li> <img src={twitter} alt="missing" /> </li>
+                                <li> <a href="https://discord.gg/blxckout"> <img src={discord} alt="missing" /> </a></li>
+                                <li> <a href="https://twitter.com/blxckout_nft"> <img src={twitter} alt="missing" /> </a></li>
                                 <li> <img src={messanger} alt="missing" /> </li>
                                 <li> <img src={trello} alt="missing" /> </li>
                             </ul>
