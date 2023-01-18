@@ -35,9 +35,9 @@ export const Layout = (props) => {
                 <Navbar.Brand href="/" className='d-none-desktop'><img src={logo} alt="missing" /></Navbar.Brand>
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="ms-auto">
-                    <Nav.Link href="/RoadMapDetail">Ecosystem</Nav.Link>
+                    <Nav.Link href="/RoadMapDetail">Product</Nav.Link>
                     <Nav.Link href="/NFT">NFT</Nav.Link>
-                    <Nav.Link href="#home">Adopt</Nav.Link>
+                    {/* <Nav.Link href="#home">Adopt</Nav.Link> */}
                     <Nav.Link href="/Contact">Contact Us</Nav.Link>
                     <Nav.Link href="#link" className='wallet'>Connect wallet</Nav.Link>
                   </Nav>
