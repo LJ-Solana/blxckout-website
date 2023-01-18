@@ -399,10 +399,10 @@ a.carousel-control-next,a.carousel-control-prev{
     content: "";
     position: absolute;
     z-index: -2;
-    top: 0%;
+    top: 11%;
     bottom: 15%;
     left: -4%;
-    height: 45%;
+    // height: 45%;
     background-repeat: no-repeat;
     width: 27%;
     opacity: 0.4;
@@ -413,10 +413,10 @@ a.carousel-control-next,a.carousel-control-prev{
     content: "";
     position: absolute;
     z-index: -2;
-    top: 0%;
+    top: 11%;
     bottom: 15%;
     right: -11%;
-    height: 45%;
+    /* height: 45%; */
     opacity: 0.4;
     background-repeat: no-repeat;
     width: 27%;
