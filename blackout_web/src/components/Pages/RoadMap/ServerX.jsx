@@ -50,7 +50,7 @@ export const ServerX = ({innerRef}) => {
                     <img src={slides.vector} alt="missing" />
                     <h5 className='blockh5'>{slides.title}</h5>
                     <p className='mb-3'>{slides.des1}</p>
-                    <p>{slides.des1}</p>
+                    <p>{slides.des2}</p>
                   </div>
               </Carousel.Item>
             )

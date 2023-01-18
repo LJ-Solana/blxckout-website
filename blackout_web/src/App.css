@@ -426,7 +426,7 @@ a.carousel-control-next, a.carousel-control-prev {
 }
 
 .nftbg .ecogif:before {
-  background-image: url(./imgs/eco-gif.gif);
+  background-image: url(./imgs/eco-gif1.gif);
   content: "";
   position: absolute;
   z-index: -2;
@@ -611,7 +611,7 @@ textarea:focus-visible {
 }
 
 .ecogif:before {
-  background-image: url(imgs/eco-gif.gif);
+  background-image: url(imgs/eco-gif1.gif);
   content: "";
   position: absolute;
   z-index: -2;
@@ -620,7 +620,7 @@ textarea:focus-visible {
   bottom: 15%;
   right: -11%;
   background-repeat: no-repeat;
-  width: 27%;
+  width: 36%;
   mix-blend-mode: luminosity;
 }
 
@@ -647,7 +647,7 @@ textarea:focus-visible {
 }
 
 .ecogifn:before {
-  background-image: url(imgs/eco-gif.gif);
+  background-image: url(imgs/eco-gif1.gif);
   content: "";
   position: absolute;
   z-index: -2;
@@ -656,7 +656,7 @@ textarea:focus-visible {
   bottom: 17%;
   right: 0%;
   background-repeat: no-repeat;
-  width: 19%;
+  width: 31%;
   mix-blend-mode: luminosity;
 }
 
