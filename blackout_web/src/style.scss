@@ -391,6 +391,9 @@ a.carousel-control-next,a.carousel-control-prev{
         width: 9%;
     }
 }
+.gifx img {
+    opacity: 0.4;
+}
 .nftbg .ecogif:after {
     background-image: url(./imgs/eco-gif.gif);
     content: "";
@@ -402,6 +405,7 @@ a.carousel-control-next,a.carousel-control-prev{
     height: 45%;
     background-repeat: no-repeat;
     width: 27%;
+    opacity: 0.4;
     mix-blend-mode: luminosity;
 }
 .nftbg .ecogif:before {
@@ -413,6 +417,7 @@ a.carousel-control-next,a.carousel-control-prev{
     bottom: 15%;
     right: -11%;
     height: 45%;
+    opacity: 0.4;
     background-repeat: no-repeat;
     width: 27%;
     mix-blend-mode: luminosity;
@@ -568,6 +573,7 @@ textarea:focus-visible {
     background-image: url(imgs/eco-gif.gif);
     content: "";
     position: absolute;
+    opacity: 0.4;
     z-index: -2;
     top: 7%;
     bottom: 15%;
@@ -582,6 +588,7 @@ textarea:focus-visible {
     position: absolute;
     z-index: -2;
     top: 7%;
+    opacity: 0.4;
     bottom: 15%;
     right: -11%;
     background-repeat: no-repeat;
@@ -599,6 +606,7 @@ textarea:focus-visible {
     z-index: -2;
     top: 7%;
     bottom: 15%;
+    opacity: 0.4;
     left: -2%;
     background-repeat: no-repeat;
     width: 100%;
@@ -612,6 +620,7 @@ textarea:focus-visible {
     content: "";
     position: absolute;
     z-index: -2;
+    opacity: 0.4;
     top: 7%;
     bottom: 17%;
     right: 0%;
@@ -780,6 +789,12 @@ textarea:focus-visible {
  @media only screen and (max-width: 768px) {
     .textCenterMbl,.text-end-div,.bannerx{
         text-align: center;
+    }
+    .detailbg .bgmask4 p {
+        font-size: 11px;
+    }
+    .roadmapdetail .ecogif p {
+        font-size: 13px;
     }
     .w-80{
         width: 100%;

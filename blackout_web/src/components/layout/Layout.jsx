@@ -104,8 +104,8 @@ export const Layout = (props) => {
                             <ul className='socialIcons'>
                                 <li> <a href="https://discord.gg/blxckout"> <img src={discord} alt="missing" /> </a></li>
                                 <li> <a href="https://twitter.com/blxckout_nft"> <img src={twitter} alt="missing" /> </a></li>
-                                <li> <img src={messanger} alt="missing" /> </li>
-                                <li> <img src={trello} alt="missing" /> </li>
+                                {/* <li> <img src={messanger} alt="missing" /> </li>
+                                <li> <img src={trello} alt="missing" /> </li> */}
                             </ul>
                             <p>2022 blackout ✽ All rights reserved.</p>
                         </Col>
