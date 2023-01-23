@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *, p {
   margin: 0;
   padding: 0;
@@ -557,7 +556,7 @@ a.carousel-control-next, a.carousel-control-prev {
   background-size: 100% 100%;
   right: 0;
   width: 100%;
-  z-index: -1;
+  z-index: 9999;
 }
 
 .nxdebg .row {
@@ -619,7 +618,7 @@ textarea:focus-visible {
   top: 7%;
   opacity: 0.4;
   bottom: 15%;
-  right: -17%;
+  right: -11%;
   background-repeat: no-repeat;
   width: 36%;
   mix-blend-mode: luminosity;
@@ -655,7 +654,7 @@ textarea:focus-visible {
   opacity: 0.4;
   top: 7%;
   bottom: 17%;
-  right: -3%;
+  right: 0%;
   background-repeat: no-repeat;
   width: 31%;
   mix-blend-mode: luminosity;
@@ -723,7 +722,7 @@ textarea:focus-visible {
   content: "\f053";
 }
 .nftcenter .slick-prev {
-  left: -2%;
+  left: 60%;
   z-index: 1;
 }
 
@@ -748,11 +747,6 @@ textarea:focus-visible {
   height: 13px;
   object-fit: cover;
   margin: 0 4px;
-}
-
-button.navbar-toggler.collapsed {
-  position: absolute;
-  left: -10px;
 }
 
 .longslide .hash span {
@@ -884,13 +878,6 @@ a.navbar-brand img {
     font-size: 11px;
   }
   .roadmapdetail .ecogif p {
-    font-size: 13px;
-  }
-  .headingnfts {
-    width: 85%;
-    margin: 0 auto;
-  }
-  .headingnfts p {
     font-size: 13px;
   }
   .w-80 {
@@ -1094,6 +1081,7 @@ a.navbar-brand img {
   }
   .headerbar .d-none-desktop {
     display: block;
+    margin-left: 0;
   }
   .headerbar .d-none-mbl {
     display: none;
@@ -1255,9 +1243,6 @@ a.navbar-brand img {
   .feature:nth-child(2) .b2 {
     align-self: self-end;
   }
-  nav.navbar.navbar-expand-lg.navbar-light .container {
-    text-align: center;
-  }
 }
 @media only screen and (max-width: 575px) {
   .contactUsContent h1 {
@@ -1317,11 +1302,6 @@ a.navbar-brand img {
   }
   .about p {
     width: 77%;
-  }
-}
-@media only screen and (max-width: 380px) {
-  a.d-none-desktop.navbar-brand img {
-    width: 72%;
   }
 }
 
