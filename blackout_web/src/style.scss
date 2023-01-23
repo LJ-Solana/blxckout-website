@@ -780,6 +780,9 @@ button.navbar-toggler.collapsed{
     }.headingnfts h1 {
         padding-top: 3rem;
     }
+    a.navbar-brand img {
+        width: 42%;
+    }
     
 
 // RESPONSIVENESS
@@ -813,6 +816,9 @@ button.navbar-toggler.collapsed{
     .longslide .slick-list {
         height: 543px;
      }    
+     a.d-none-desktop.navbar-brand img {
+        width: 57%;
+    }
      .slick-dots li.slick-active button:before {
         opacity: .85;
         color: #bb00ff;
@@ -1025,15 +1031,28 @@ button.navbar-toggler.collapsed{
         }
     } 
     .nftbg .headerbar {
-        padding: 11.2rem 0 0rem;
+        padding: 2.2rem 0 0rem;
     }
-    .gifBg {
+    .headingnfts h1 {
+        padding-top: 2rem;
+    }
+    // .gifBg:before {
+    //     top: -21%;
+    //     content: "";
+    //     position: absolute;
+    //     height: 200px;
+    //     background-size: 100% 100%;
+    //     z-index: -2;
+    // }
+    .gifBg:before {
         background-image: url(./imgs/indexgif.gif);
-        top: -21%;
+        top: -38%;
+        content: "";
         position: absolute;
-        height: 200px;
-        background-size: 100% 100%;
+        height: 269px;
+        background-size: contain;
         z-index: -2;
+        width: 100%;
     }
     .bgmain{
         background-image: none;
@@ -1052,7 +1071,7 @@ button.navbar-toggler.collapsed{
             width: 100%;
         }
         .headerbar{
-            padding: 10.6rem 0 0rem;
+            padding: 2.2rem 0 0rem;
         }
     }
     .headerbar{
