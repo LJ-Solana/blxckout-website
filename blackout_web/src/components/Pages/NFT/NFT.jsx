@@ -100,8 +100,10 @@ export const NFT = () => {
         <Layout>
           <div className="nftgif ecogif">
             <div className='nftcenter text-white mt-4 overflow-v'>
-              <h1 className='abel'>Blxckout Collection</h1>
-              <p className='abel fw-light'>Blxckout Genesis collection. The gateway into the 'X' ecosystem. Building blockchain-enabled products and services such as data storage & tooling, while providing a great UX on the journey through web 3.0</p>
+              <div className="headingnfts">
+                <h1 className='abel'>Blxckout Collection</h1>
+                <p className='abel fw-light'>Blxckout Genesis collection. The gateway into the 'X' ecosystem. Building blockchain-enabled products and services such as data storage & tooling, while providing a great UX on the journey through web 3.0</p>
+              </div>
                   <Slider className='py-4' {...slideN}>
                       <Row className='d-flex'>
                         <Col md={5} sm={12}>
@@ -248,6 +250,11 @@ export const NFT = () => {
                       </Row>
                       {/* --- */}
                     </Slider>
+                    
+              <div className="headingnfts">
+                <h1 className='abel'>NXDE Collection</h1>
+                <p className='abel fw-light'>Access to 3 x top spec RPC nodes in a highly redundant setting for 1 year. No monthly subscription. Can be used for building Solana products, sniping and botting. A product from BLXCKOUT.</p>
+              </div>
                   <Slider className='py-5' {...slideN}>
                       <Row className='d-flex'>
                         <Col md={5} sm={12}>

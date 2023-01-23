@@ -770,7 +770,16 @@ button.navbar-toggler.collapsed{
     .nxdex .bannerx.ecogifn,.detailbg{
         overflow: hidden;
     }
-
+    .headingnfts {
+        width: 86%;
+        margin: 0;
+    }
+    .headingnfts p {
+        font-size: 18px;
+        padding: 2.5rem 0;
+    }.headingnfts h1 {
+        padding-top: 3rem;
+    }
 
 // RESPONSIVENESS
 @media only screen and (max-width: 2200px) and (min-width:1400px) {
@@ -807,6 +816,13 @@ button.navbar-toggler.collapsed{
     .roadmapdetail .ecogif p {
         font-size: 13px;
     }
+    .headingnfts {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .headingnfts p {
+        font-size: 13px;
+    }    
     .w-80{
         width: 100%;
     }

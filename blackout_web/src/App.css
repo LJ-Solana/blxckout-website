@@ -803,6 +803,20 @@ button.navbar-toggler.collapsed {
   overflow: hidden;
 }
 
+.headingnfts {
+  width: 86%;
+  margin: 0;
+}
+
+.headingnfts p {
+  font-size: 18px;
+  padding: 2.5rem 0;
+}
+
+.headingnfts h1 {
+  padding-top: 3rem;
+}
+
 @media only screen and (max-width: 2200px) and (min-width: 1400px) {
   .ecogifn:before {
     right: -9%;
@@ -834,6 +848,13 @@ button.navbar-toggler.collapsed {
     font-size: 11px;
   }
   .roadmapdetail .ecogif p {
+    font-size: 13px;
+  }
+  .headingnfts {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .headingnfts p {
     font-size: 13px;
   }
   .w-80 {
