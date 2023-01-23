@@ -92,9 +92,8 @@ export const ServerX = ({innerRef}) => {
         </Row>
         </div>
         <div className="gifx text-center">
-          <a href="https://magiceden.io/marketplace/blxckout_">
             <img src={gif} alt="missing" />
-          </a>
+          {/* </a> */}
         </div>
     </div>
   )
