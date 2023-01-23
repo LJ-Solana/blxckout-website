@@ -62,7 +62,7 @@ export const NFT = () => {
       // autoplay: true,
         speed: 300,
         slidesToShow: 5,
-        slidesToScroll: 1,
+        // slidesToScroll: 1,
         responsive: [
           {
             breakpoint: 768,
@@ -76,7 +76,7 @@ export const NFT = () => {
       };
       var slideN = {
         dots: false,
-        infinite: false,
+        infinite: true,
       // autoplay: true,
         speed: 500,
         slidesToShow: 1.6,

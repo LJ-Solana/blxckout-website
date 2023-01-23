@@ -13,10 +13,10 @@ $Fbold: "BoldFont";
     font-family: 'BoldFont';
     src: local('BoldFont'), url(./gilroy-fontFamily/Gilroy-SemiBold.ttf);
 }
-$abel:'Abel', sans-serif;
-.abel{
-    font-family: $abel;
-}
+// $abel:'Abel', sans-serif;
+// .abel{
+//     font-family: $abel;
+// }
 .textPink{
     color: $lightcolor;
 }
@@ -725,6 +725,7 @@ textarea:focus-visible {
 }
 button.navbar-toggler.collapsed{
     position: absolute;
+    left: -10px;
 }
 .longslide .hash{
     span{

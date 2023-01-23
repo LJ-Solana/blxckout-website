@@ -11,10 +11,6 @@
   font-family: "BoldFont";
   src: local("BoldFont"), url(./gilroy-fontFamily/Gilroy-SemiBold.ttf);
 }
-.abel {
-  font-family: "Abel", sans-serif;
-}
-
 .textPink {
   color: #BB00FF;
 }
@@ -755,6 +751,7 @@ textarea:focus-visible {
 
 button.navbar-toggler.collapsed {
   position: absolute;
+  left: -10px;
 }
 
 .longslide .hash span {
