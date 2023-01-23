@@ -783,6 +783,19 @@ button.navbar-toggler.collapsed{
     a.navbar-brand img {
         width: 42%;
     }
+    .viewM{
+        text-align: center;
+        button {
+            background-color: #381D43;
+            color: white;
+            font-size: 13px;
+            border: 0;
+            border-radius: 4px;
+            padding: 0.7rem 37px;
+            letter-spacing: 1px;
+            margin-bottom: 2.5rem;
+        }
+    }
     
 
 // RESPONSIVENESS
@@ -814,7 +827,7 @@ button.navbar-toggler.collapsed{
         text-align: center;
     }
     .longslide .slick-list {
-        height: 543px;
+        height: 503px;
      }    
      a.d-none-desktop.navbar-brand img {
         width: 57%;
@@ -825,12 +838,12 @@ button.navbar-toggler.collapsed{
         color: #bb00ff;
     }
     .slick-dots {
-        padding-bottom: 4rem;
+        padding-bottom: 4.5rem;
         padding-left: 0;
     }
      .slick-dots li button:before {
         font-family: 'slick';
-        font-size: 7px;
+        font-size: 10px;
         line-height: 20px;
         position: absolute;
         top: 0;

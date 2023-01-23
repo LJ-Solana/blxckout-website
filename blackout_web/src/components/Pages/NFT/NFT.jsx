@@ -406,7 +406,7 @@ export const NFT = () => {
           {/* LONG SLIDE */}
           <div className="text-white longslide">
             <div className="d-flex space-between centerContent mt-3">
-              <h4 className="fw-bold">NFTs for Sale</h4>
+              <h4 className="fw-bold">Deals on NFTs</h4>
               <button className='viewm'>VIEW MARKETPLACE</button>
             </div>
             <Slider {...settings}>
@@ -439,6 +439,9 @@ export const NFT = () => {
                 })}
           </Slider>
           </div> 
+          <div className="viewM">
+            <button>VIEW MARKETPLACE</button>
+          </div>
           {/* LONGSLIDE ENDS  */}
           <div className="nftgif ecogif d-none">
             <div className='nftcenter text-white mt-2 '>

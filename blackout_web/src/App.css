@@ -822,6 +822,20 @@ a.navbar-brand img {
   width: 42%;
 }
 
+.viewM {
+  text-align: center;
+}
+.viewM button {
+  background-color: #381D43;
+  color: white;
+  font-size: 13px;
+  border: 0;
+  border-radius: 4px;
+  padding: 0.7rem 37px;
+  letter-spacing: 1px;
+  margin-bottom: 2.5rem;
+}
+
 @media only screen and (max-width: 2200px) and (min-width: 1400px) {
   .ecogifn:before {
     right: -9%;
@@ -850,7 +864,7 @@ a.navbar-brand img {
     text-align: center;
   }
   .longslide .slick-list {
-    height: 543px;
+    height: 503px;
   }
   a.d-none-desktop.navbar-brand img {
     width: 57%;
@@ -860,12 +874,12 @@ a.navbar-brand img {
     color: #bb00ff;
   }
   .longslide .slick-dots {
-    padding-bottom: 4rem;
+    padding-bottom: 4.5rem;
     padding-left: 0;
   }
   .longslide .slick-dots li button:before {
     font-family: "slick";
-    font-size: 7px;
+    font-size: 10px;
     line-height: 20px;
     position: absolute;
     top: 0;
