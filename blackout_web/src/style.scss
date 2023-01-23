@@ -537,7 +537,7 @@ a.carousel-control-next,a.carousel-control-prev{
         background-size: 100% 100%;
         right: 0;
         width: 100%;
-        z-index: 9999;
+        z-index: -1;
     }
 }
 .nxdebg {
@@ -810,6 +810,30 @@ button.navbar-toggler.collapsed{
     .textCenterMbl,.text-end-div,.bannerx{
         text-align: center;
     }
+    .longslide .slick-list {
+        height: 543px;
+     }    
+     .slick-dots li.slick-active button:before {
+        opacity: .85;
+        color: #bb00ff;
+    }
+    .slick-dots {
+        padding-bottom: 4rem;
+        padding-left: 0;}
+     .slick-dots li button:before {
+        font-family: 'slick';
+        font-size: 7px;
+        line-height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 23px;
+        height: 24px;
+        content: '•';
+        text-align: center;
+        opacity: .5;
+        color: #bb00ff;
+     }
     .headingnfts p {
         padding: 0rem 0;
     }
@@ -1001,7 +1025,7 @@ button.navbar-toggler.collapsed{
         }
     } 
     .nftbg .headerbar {
-        padding: 9.2rem 0 0rem;
+        padding: 11.2rem 0 0rem;
     }
     .gifBg {
         background-image: url(./imgs/indexgif.gif);

@@ -94,7 +94,8 @@ export const Nxde = ({innerRef}) => {
           <Row className='downloadimg'>
             <Col md={6} className="textPink align-self-center"><h4 className='mb-0'>Download now</h4></Col>
             <Col md={6} className="text-end">
-            <a href="https://magiceden.io/marketplace/blxckout_">
+              {/* <a href="https://magiceden.io/marketplace/blxckout">helo</a> */}
+            <a href="https://magiceden.io/marketplace/blxckout">
                 <img src={download3} alt="missing" />
             </a>
             </Col>
