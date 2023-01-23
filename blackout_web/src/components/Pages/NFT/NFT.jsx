@@ -19,37 +19,37 @@ import { Layout } from '../../layout/Layout';
 const longslide =[
   {
     vector: card,
-    hash: "232",
+    hash: "12",
     title: "EVOL Blxckout",
     price: "15 ETH"
   },
   {
     vector: card,
-    hash: "232",
+    hash: "2",
     title: "EVOL Blxckout",
     price: "15 ETH"
   },
   {
     vector: card,
-    hash: "232",
+    hash: "3",
     title: "EVOL Blxckout",
     price: "15 ETH"
   },
   {
     vector: card,
-    hash: "232",
+    hash: "4",
     title: "EVOL Blxckout",
     price: "15 ETH"
   },
   {
     vector: card,
-    hash: "232",
+    hash: "5",
     title: "EVOL Blxckout",
     price: "15 ETH"
   },
   {
     vector: card,
-    hash: "232",
+    hash: "6",
     title: "EVOL Blxckout",
     price: "15 ETH"
   }
@@ -99,7 +99,9 @@ export const NFT = () => {
       <div className="nftbg">
         <Layout>
           <div className="nftgif ecogif">
-            <div className='nftcenter text-white mt-4 '>
+            <div className='nftcenter text-white mt-4 overflow-v'>
+              <h1 className='abel'>Blxckout Collection</h1>
+              <p className='abel fw-light'>Blxckout Genesis collection. The gateway into the 'X' ecosystem. Building blockchain-enabled products and services such as data storage & tooling, while providing a great UX on the journey through web 3.0</p>
                   <Slider className='py-4' {...slideN}>
                       <Row className='d-flex'>
                         <Col md={5} sm={12}>
@@ -397,7 +399,7 @@ export const NFT = () => {
           {/* LONG SLIDE */}
           <div className="text-white longslide">
             <div className="d-flex space-between centerContent mt-3">
-              <h4 className="fw-bold">NFTs for Sales</h4>
+              <h4 className="fw-bold">NFTs for Sale</h4>
               <button className='viewm'>VIEW MARKETPLACE</button>
             </div>
             <Slider {...settings}>
@@ -431,7 +433,7 @@ export const NFT = () => {
           </Slider>
           </div> 
           {/* LONGSLIDE ENDS  */}
-          <div className="nftgif ecogif">
+          <div className="nftgif ecogif d-none">
             <div className='nftcenter text-white mt-2 '>
                   <Slider className='py-4' {...slideN}>
                       <Row className='d-flex'>
@@ -728,9 +730,9 @@ export const NFT = () => {
               </div>
           </div>
           {/* LONG SLIDE */}
-          <div className="text-white longslide">
+          <div className="text-white d-none longslide">
             <div className="d-flex space-between centerContent mt-3">
-              <h4 className="fw-bold">NFTs for Sales</h4>
+              <h4 className="fw-bold">NFTs for Sale</h4>
               <button className='viewm'>VIEW MARKETPLACE</button>
             </div>
             <Slider {...settings}>

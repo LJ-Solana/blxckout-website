@@ -115,11 +115,15 @@ export const Synx = ({innerRef}) => {
             </Col>
         </Row>
         <Row className='downloadimg'>
-          <Col md={6} className="textPink align-self-center"><h4 className='mb-0'>Get download now</h4></Col>
+          <Col md={6} className="textPink align-self-center"><h4 className='mb-0'>Download now</h4></Col>
           <Col md={6} className="text-end">
-            <img src={download1} alt="missing" />
-            <img src={download2} alt="missing" />
-            <img src={download3} alt="missing" />
+            <a href="https://developer.apple.com/testflight/">
+              <img src={download1} alt="missing" />
+            </a>
+            <a href="https://play.google.com/store/apps?hl=en&gl=US">
+              <img src={download2} alt="missing" />
+            </a>
+            {/* <img src={download3} alt="missing" /> */}
           </Col>
         </Row>
     </div>

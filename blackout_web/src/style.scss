@@ -13,6 +13,10 @@ $Fbold: "BoldFont";
     font-family: 'BoldFont';
     src: local('BoldFont'), url(./gilroy-fontFamily/Gilroy-SemiBold.ttf);
 }
+$abel:'Abel', sans-serif;
+.abel{
+    font-family: $abel;
+}
 .textPink{
     color: $lightcolor;
 }
@@ -590,7 +594,7 @@ textarea:focus-visible {
     top: 7%;
     opacity: 0.4;
     bottom: 15%;
-    right: -11%;
+    right: -17%;
     background-repeat: no-repeat;
     width: 36%;
     // background-size: 110% 251%;
@@ -623,7 +627,7 @@ textarea:focus-visible {
     opacity: 0.4;
     top: 7%;
     bottom: 17%;
-    right: 0%;
+    right: -3%;
     background-repeat: no-repeat;
     width: 31%;
     mix-blend-mode: luminosity;
@@ -695,7 +699,7 @@ textarea:focus-visible {
         content: "\f053";
     }
     .slick-prev {
-        left: 60%;
+        left: -2%;
         z-index: 1;
     }
 }
@@ -718,6 +722,9 @@ textarea:focus-visible {
     height: 13px;
     object-fit: cover;
     margin: 0 4px;
+}
+button.navbar-toggler.collapsed{
+    position: absolute;
 }
 .longslide .hash{
     span{
@@ -750,25 +757,27 @@ textarea:focus-visible {
     .height08{
         line-height: 0.8;
     }
-// .bannerx:before {
-//     background-image: url(imgs/eco-gif.gif);
-//     content: "";
-//     position: absolute;
-//     z-index: -2;
-//     top: -89%;
-//     left: 0;
-//     right: 0;
-//     background-repeat: no-repeat;
-//     bottom: 0;
-//     width: 100%;
-//     background-size: 100%;
-//     mix-blend-mode: luminosity;
-// }
-
+    .hash {
+        width: 33%;
+    }
+    .overflow-v{
+        overflow: visible;
+    }
+    .nftgif.ecogif:after {
+        display: none;
+    }
+    .nxdex .bannerx.ecogifn,.detailbg{
+        overflow: hidden;
+    }
 
 
 // RESPONSIVENESS
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 2200px) and (min-width:1400px) {
+.ecogifn:before {
+    right: -9%;
+}
+}
+    @media only screen and (max-width: 1020px) {
     .banner{
         .leftGif {
         left: -14%;
@@ -1003,7 +1012,7 @@ textarea:focus-visible {
     .headerbar{
         .d-none-desktop{
             display: block;
-            margin-left: 0;
+            // margin-left: 0;
         }
         .d-none-mbl{
             display: none;
@@ -1168,6 +1177,11 @@ textarea:focus-visible {
             align-self: self-end;
         }
     }
+    nav.navbar.navbar-expand-lg.navbar-light .container {
+        text-align: center;
+    }
+    
+    
 }
 @media only screen and (max-width: 575px) {
     .contactUsContent{
@@ -1238,5 +1252,12 @@ textarea:focus-visible {
         p {
             width: 77%;
         }
+    }
+
+}
+
+@media only screen and (max-width: 380px) {
+    a.d-none-desktop.navbar-brand img {
+        width: 72%;
     }
 }
