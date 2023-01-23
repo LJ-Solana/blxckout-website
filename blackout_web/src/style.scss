@@ -780,6 +780,7 @@ button.navbar-toggler.collapsed{
     }.headingnfts h1 {
         padding-top: 3rem;
     }
+    
 
 // RESPONSIVENESS
 @media only screen and (max-width: 2200px) and (min-width:1400px) {
@@ -809,6 +810,10 @@ button.navbar-toggler.collapsed{
     .textCenterMbl,.text-end-div,.bannerx{
         text-align: center;
     }
+    .headingnfts p {
+        padding: 0rem 0;
+    }
+    
     .detailbg .bgmask4 p {
         font-size: 11px;
     }

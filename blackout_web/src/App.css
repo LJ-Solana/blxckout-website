@@ -844,6 +844,9 @@ button.navbar-toggler.collapsed {
   .textCenterMbl, .text-end-div, .bannerx {
     text-align: center;
   }
+  .headingnfts p {
+    padding: 0rem 0;
+  }
   .detailbg .bgmask4 p {
     font-size: 11px;
   }
