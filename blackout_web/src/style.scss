@@ -784,6 +784,7 @@ button.navbar-toggler.collapsed{
         width: 42%;
     }
     .viewM{
+        display: none;
         text-align: center;
         button {
             background-color: #381D43;
@@ -829,6 +830,9 @@ button.navbar-toggler.collapsed{
     .longslide .slick-list {
         height: 503px;
      }    
+     
+    .viewM{
+        display: block;}
      a.d-none-desktop.navbar-brand img {
         width: 57%;
     }

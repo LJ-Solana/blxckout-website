@@ -823,6 +823,7 @@ a.navbar-brand img {
 }
 
 .viewM {
+  display: none;
   text-align: center;
 }
 .viewM button {
@@ -865,6 +866,9 @@ a.navbar-brand img {
   }
   .longslide .slick-list {
     height: 503px;
+  }
+  .viewM {
+    display: block;
   }
   a.d-none-desktop.navbar-brand img {
     width: 57%;
