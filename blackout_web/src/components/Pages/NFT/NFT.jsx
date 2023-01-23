@@ -76,7 +76,7 @@ export const NFT = () => {
       };
       var slideN = {
         dots: false,
-        infinite: true,
+        infinite: false,
       // autoplay: true,
         speed: 500,
         slidesToShow: 1.6,
