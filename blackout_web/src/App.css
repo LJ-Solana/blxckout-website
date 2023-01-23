@@ -855,15 +855,15 @@ a.navbar-brand img {
   a.d-none-desktop.navbar-brand img {
     width: 57%;
   }
-  .slick-dots li.slick-active button:before {
+  .longslide .slick-dots li.slick-active button:before {
     opacity: 0.85;
     color: #bb00ff;
   }
-  .slick-dots {
+  .longslide .slick-dots {
     padding-bottom: 4rem;
     padding-left: 0;
   }
-  .slick-dots li button:before {
+  .longslide .slick-dots li button:before {
     font-family: "slick";
     font-size: 7px;
     line-height: 20px;
@@ -914,9 +914,11 @@ a.navbar-brand img {
   .nftcenter .slick-next, .longslide .slick-next {
     right: 4%;
     z-index: 1;
+    height: 22px;
   }
   .nftcenter .slick-prev, .longslide .slick-prev {
     left: 4%;
+    height: 22px;
   }
   .nftcenter .slick-prev, .nftcenter .slick-next, .longslide .slick-prev, .longslide .slick-next {
     top: 35%;
@@ -963,7 +965,7 @@ a.navbar-brand img {
     -webkit-font-smoothing: antialiased;
   }
   .nftcenter .slick-next, .longslide .slick-next {
-    width: 24px;
+    width: 22px;
   }
   .nftcenter .slick-next:before, .longslide .slick-next:before {
     display: block;

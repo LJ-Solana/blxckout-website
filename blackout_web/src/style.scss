@@ -819,13 +819,15 @@ button.navbar-toggler.collapsed{
      a.d-none-desktop.navbar-brand img {
         width: 57%;
     }
+    .longslide{
      .slick-dots li.slick-active button:before {
         opacity: .85;
         color: #bb00ff;
     }
     .slick-dots {
         padding-bottom: 4rem;
-        padding-left: 0;}
+        padding-left: 0;
+    }
      .slick-dots li button:before {
         font-family: 'slick';
         font-size: 7px;
@@ -840,6 +842,8 @@ button.navbar-toggler.collapsed{
         opacity: .5;
         color: #bb00ff;
      }
+        
+    }
     .headingnfts p {
         padding: 0rem 0;
     }
@@ -880,9 +884,11 @@ button.navbar-toggler.collapsed{
             .slick-next {
                 right: 4%;
                 z-index: 1;
+                height: 22px;
             }
             .slick-prev {
                 left: 4%;
+                height: 22px;
             }
             .slick-prev, .slick-next {
                 top: 35%;
@@ -929,7 +935,7 @@ button.navbar-toggler.collapsed{
             -webkit-font-smoothing: antialiased;
         }
         .slick-next {
-            width: 24px;
+            width: 22px;
         }
         .slick-next:before{
             display: block;
