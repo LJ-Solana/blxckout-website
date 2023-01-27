@@ -1,20 +1,18 @@
-import React from 'react'
+import { React, useEffect } from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
 import card from '../../../imgs/card.png'
-// import { Button } from 'bootstrap';
 import Button from 'react-bootstrap/Button';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import icon1 from '../../../imgs/nfticon1.png'
 import icon2 from '../../../imgs/nfticon2.png'
 import icon3 from '../../../imgs/nfticon3.png'
-// import { CgChevronLeft } from "react-icons/cg";
-
 import { AiFillExclamationCircle } from 'react-icons/ai';
 import { Col, Row } from 'react-bootstrap';
 import { Layout } from '../../layout/Layout';
+import axios from 'axios';
 
 const longslide =[
   {
@@ -56,6 +54,7 @@ const longslide =[
 ]
 
 export const NFT = () => {
+  
     var settings = {
         dots: false,
         infinite: true,
@@ -94,6 +93,23 @@ export const NFT = () => {
             }
           }]
       };
+      const BODY ={
+        "condition": {
+          "project_ids": [{"project_id": "DPzUdQES2X7QsauzzqHDVk6ttCqMrWHuuetK3JpTuKA4" }]
+        }
+      };
+      // const HEADER = {
+      //   "Authorization": eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJTeW54IiwibmFtZSI6Ikh5cGVyc3BhY2UiLCJpYXQiOiIxNTE2MjM5MDIyIn0.OzYzyS3LqoFTu3kodHF8xMGZ2S1simBasguIJEfpBbU
+      // };
+      useEffect(()=>{
+        
+        axios.post('https://beta.api.solanalysis.com/rest/get-market-place-snapshots', BODY, {
+          header: {
+            'Authorization':  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJTeW54IiwibmFtZSI6Ikh5cGVyc3BhY2UiLCJpYXQiOiIxNTE2MjM5MDIyIn0.OzYzyS3LqoFTu3kodHF8xMGZ2S1simBasguIJEfpBbU'
+          }
+        }).then(res=> console.log("hello" , res));
+                
+      },[])
   return (
     <div className="gifBg w-100">
       <div className="nftbg">
