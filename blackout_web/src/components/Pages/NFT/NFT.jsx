@@ -101,15 +101,54 @@ export const NFT = () => {
       // const HEADER = {
       //   "Authorization": eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJTeW54IiwibmFtZSI6Ikh5cGVyc3BhY2UiLCJpYXQiOiIxNTE2MjM5MDIyIn0.OzYzyS3LqoFTu3kodHF8xMGZ2S1simBasguIJEfpBbU
       // };
-      useEffect(()=>{
-        
-        axios.post('https://beta.api.solanalysis.com/rest/get-market-place-snapshots', BODY, {
-          header: {
-            'Authorization':  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJTeW54IiwibmFtZSI6Ikh5cGVyc3BhY2UiLCJpYXQiOiIxNTE2MjM5MDIyIn0.OzYzyS3LqoFTu3kodHF8xMGZ2S1simBasguIJEfpBbU'
-          }
-        }).then(res=> console.log("hello" , res));
+      // useEffect(()=>{
+
+      //   axios.post('https://beta.api.solanalysis.com/rest/get-market-place-snapshots', BODY, {
+      //     header: {
+      //       'Authorization':  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJTeW54IiwibmFtZSI6Ikh5cGVyc3BhY2UiLCJpYXQiOiIxNTE2MjM5MDIyIn0.OzYzyS3LqoFTu3kodHF8xMGZ2S1simBasguIJEfpBbU'
+      //     }
+      //   }).then(res=> console.log("hello" , res));
                 
-      },[])
+      // },[])
+      useEffect(() => {
+        var data = JSON.stringify({
+          "condition": {
+            "project_ids": [
+              {
+                "project_id": "DPzUdQES2X7QsauzzqHDVk6ttCqMrWHuuetK3JpTuKA4"
+              }
+            ]
+          }
+        });
+        
+        var config = {
+          method: 'post',
+          proxy: {
+            protocol: 'https',
+          
+          },
+          // httpsAgent: new https.Agent({ keepAlive: true }),
+          url: 'https://beta.api.solanalysis.com/rest/get-market-place-snapshots',
+          headers: { 
+            'Authorization': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJTeW54IiwibmFtZSI6Ikh5cGVyc3BhY2UiLCJpYXQiOiIxNTE2MjM5MDIyIn0.OzYzyS3LqoFTu3kodHF8xMGZ2S1simBasguIJEfpBbU', 
+            'Content-Type': 'application/json'
+          },
+          data : data
+        };
+        
+        axios(config)
+        .then(function (response) {
+          console.log(JSON.stringify(response.data));
+        })
+        .catch(function (error) {
+          debugger
+          console.log(error);
+        });
+      
+       
+      }, [])
+      
+
   return (
     <div className="gifBg w-100">
       <div className="nftbg">
