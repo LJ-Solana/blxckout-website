@@ -12,7 +12,7 @@ import icon3 from '../../../imgs/nfticon3.png'
 import { AiFillExclamationCircle } from 'react-icons/ai';
 import { Col, Row } from 'react-bootstrap';
 import { Layout } from '../../layout/Layout';
-import axios from 'axios';
+import axios from 'axios'
 
 const longslide =[
   {
@@ -93,22 +93,31 @@ export const NFT = () => {
             }
           }]
       };
-      const BODY ={
-        "condition": {
-          "project_ids": [{"project_id": "DPzUdQES2X7QsauzzqHDVk6ttCqMrWHuuetK3JpTuKA4" }]
-        }
-      };
-      // const HEADER = {
-      //   "Authorization": eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJTeW54IiwibmFtZSI6Ikh5cGVyc3BhY2UiLCJpYXQiOiIxNTE2MjM5MDIyIn0.OzYzyS3LqoFTu3kodHF8xMGZ2S1simBasguIJEfpBbU
-      // };
+     
+      var BODY = JSON.stringify({
+        "query": {
+                 "firstVerifiedCreators": ["DPzUdQES2X7QsauzzqHDVk6ttCqMrWHuuetK3JpTuKA4"]
+             }
+     });
+     
       useEffect(()=>{
-        
-        axios.post('https://beta.api.solanalysis.com/rest/get-market-place-snapshots', BODY, {
-          header: {
-            'Authorization':  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJTeW54IiwibmFtZSI6Ikh5cGVyc3BhY2UiLCJpYXQiOiIxNTE2MjM5MDIyIn0.OzYzyS3LqoFTu3kodHF8xMGZ2S1simBasguIJEfpBbU'
+        // addresses:
+        // NXDE: AZ8rz9BgFdVyqoetPRUJdhtQKDTsg7Q7tUyHE9G6bnuR
+        // BLXCKOUT: E6XzSLwMDQH6uH6QkYVnneUBU21nAPqcKReepQHgWt4F
+        axios.get(`https://api.helius.xyz/v0/addresses/E6XzSLwMDQH6uH6QkYVnneUBU21nAPqcKReepQHgWt4F/nfts?api-key=f343c517-f581-41c6-850e-92aed788d6fa`, {}, {
+          withCredentials: false,
+          headers : {
+              'Content-Type': 'application/json',
+            },
           }
-        }).then(res=> console.log("hello" , res));
-                
+          )
+            .then(({ data }) => {
+              console.log("Response => ", data)
+            })
+            .catch(function (error) {
+              console.log("error => ",error)
+            })
+            .finally(() => {   });
       },[])
   return (
     <div className="gifBg w-100">
