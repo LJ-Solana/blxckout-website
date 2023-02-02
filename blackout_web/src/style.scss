@@ -705,23 +705,8 @@ textarea:focus-visible {
 }
 .socialnft {
     display: flex;
-}
-.socialnft a {
-    background: #490064;
-    display: flex;
-    color: #a900e6;
-    text-decoration: none;
-    font-size: 11px;
-    font-weight: 600;
-    border-radius: 22px;
-    padding: 4px 10px;
+    padding: 12px 0;
     align-items: center;
-    margin: 22px 8px 22px 0px;
-}
-.socialnft a img {
-    height: 13px;
-    object-fit: cover;
-    margin: 0 4px;
 }
 button.navbar-toggler.collapsed{
     position: absolute;
@@ -759,7 +744,33 @@ button.navbar-toggler.collapsed{
         line-height: 0.8;
     }
     .hash {
-        width: 33%;
+        width: 62%;
+    }
+    .slidercontent .hash {
+        width: 33.3%;
+        float: left;
+        padding: 0 4px;
+    }
+    .w-95 {
+        width: 95%;
+    }
+    .height01 {
+        line-height: 1.1;
+    }
+    .socialnft{
+         button {
+        border: 0;
+        font-size: 12px;
+        padding: 9px 17px;
+        background-image: linear-gradient(45deg, #a900e6, #42005b);
+        color: white;
+        border-radius: 85px;
+        height: 35px;
+        align-items: center;
+        }
+        .hash {
+            width: 18%;
+        }
     }
     .overflow-v{
         overflow: visible;
@@ -778,7 +789,7 @@ button.navbar-toggler.collapsed{
         font-size: 18px;
         padding: 2.5rem 0;
     }.headingnfts h1 {
-        padding-top: 3rem;
+        padding-top: 2rem;
     }
     a.navbar-brand img {
         width: 42%;
@@ -884,9 +895,6 @@ button.navbar-toggler.collapsed{
     }
     .nftcenter h2{
         padding-top: 15px;
-    }
-    .socialnft a {
-        margin: 16px 8px 16px 0px;
     }
     .nftcenter{
         width: 98%;
