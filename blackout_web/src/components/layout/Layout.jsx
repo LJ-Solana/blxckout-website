@@ -12,6 +12,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../../imgs/logo.png'
+import solanalogo from '../../imgs/solanaLogo.png'
+import gengologo from '../../imgs/gengologo.svg'
 // import { HiArrowUpRight } from 'react-icons/hi2';
 import Bramah from '../../imgs/Bramah.png'
 import KudelskiSecurity from '../../imgs/KudelskiSecurity.png'
@@ -59,10 +61,10 @@ export const Layout = (props) => {
                             <button className='mt-3 fw-bold'>READ FAQ  <HiArrowUpRight/></button>
                         </Col>
                         <Col md={3} xs={12} className="text-center align-self-center">
-                            <img src={Bramah} className="auditLogo1" alt="missing" />    
+                            <img style={{width:"100%"}} src={solanalogo} className="auditLogo1" alt="missing" />    
                         </Col>
                         <Col md={3} xs={12} className="align-self-center">
-                            <img src={KudelskiSecurity} className="KudelskiSecurity" alt="missing" />
+                            <img style={{width:"100%"}} src={gengologo} className="KudelskiSecurity" alt="missing" />
                         </Col>
                     </Row>
                 </div>

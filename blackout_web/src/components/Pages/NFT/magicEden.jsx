@@ -54,7 +54,7 @@ const longslide =[
   }
 ]
 
-export const NFT = () => {
+export const MagicEden = () => {
   
     var settings = {
         dots: false,
@@ -94,49 +94,222 @@ export const NFT = () => {
             }
           }]
       };
-   
+// <<<<<<< HEAD
+//       const BODY ={
+//         "condition": {
+//           "project_ids": [{"project_id": "DPzUdQES2X7QsauzzqHDVk6ttCqMrWHuuetK3JpTuKA4" }]
+//         }
+//       };
+      // const HEADER = {
+      //   "Authorization": eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJTeW54IiwibmFtZSI6Ikh5cGVyc3BhY2UiLCJpYXQiOiIxNTE2MjM5MDIyIn0.OzYzyS3LqoFTu3kodHF8xMGZ2S1simBasguIJEfpBbU
+      // };
+      // useEffect(()=>{
 
+      //   axios.post('https://beta.api.solanalysis.com/rest/get-market-place-snapshots', BODY, {
+      //     header: {
+      //       'Authorization':  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJTeW54IiwibmFtZSI6Ikh5cGVyc3BhY2UiLCJpYXQiOiIxNTE2MjM5MDIyIn0.OzYzyS3LqoFTu3kodHF8xMGZ2S1simBasguIJEfpBbU'
+      //     }
+      //   }).then(res=> console.log("hello" , res));
+                
+      // },[])
+//       useEffect(() => {
+//         var data = JSON.stringify({
+//           "condition": {
+//             "project_ids": [
+//               {
+//                 "project_id": "DPzUdQES2X7QsauzzqHDVk6ttCqMrWHuuetK3JpTuKA4"
+//               }
+//             ]
+//           }
+//         });
+//         var config = {
+//           method: 'post',
+//           proxy: {
+//             protocol: 'https',
+//           },
+//           // httpsAgent: new https.Agent({ keepAlive: true }),
+//           url: 'https://beta.api.solanalysis.com/rest/get-market-place-snapshots',
+//           headers: { 
+//             'Authorization': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJTeW54IiwibmFtZSI6Ikh5cGVyc3BhY2UiLCJpYXQiOiIxNTE2MjM5MDIyIn0.OzYzyS3LqoFTu3kodHF8xMGZ2S1simBasguIJEfpBbU', 
+//             'Content-Type': 'application/json'
+//           },
+//           data : data
+//         };
+//         axios(config)
+//         .then(function (response) {
+//           console.log(JSON.stringify(response.data));
+//         })
+//         .catch(function (error) {
+//           debugger
+//           console.log(error);
+//         });
+//       }, [])   
+// =======
+     
+      var BODY = JSON.stringify({
+        "query": {
+                 "firstVerifiedCreators": ["DPzUdQES2X7QsauzzqHDVk6ttCqMrWHuuetK3JpTuKA4"]
+             }
+     });
+     const [slideData, setslideData] = useState({
+      NXDE: [],
+      BLXCKOUT: [],
+      RANDOM: []
+     })
      const [blxckout_data_arr, setBlxckout_data_arr] = useState([])
      const [nxde_data_arr, setNxde_data_arr] = useState([])
-  
+     
+    //  const _init = useCallback(async () => {
+    //   const addresses = [
+    //     "AZ8rz9BgFdVyqoetPRUJdhtQKDTsg7Q7tUyHE9G6bnuR",
+    //     "E6XzSLwMDQH6uH6QkYVnneUBU21nAPqcKReepQHgWt4F"
+    //   ]
+    //   // addresses:
+    //   // NXDE: AZ8rz9BgFdVyqoetPRUJdhtQKDTsg7Q7tUyHE9G6bnuR
+    //   // BLXCKOUT: E6XzSLwMDQH6uH6QkYVnneUBU21nAPqcKReepQHgWt4F
+    //   const requests = []
+
+    //   addresses.forEach(address => {
+    //     requests.push( axios.get(`https://api.helius.xyz/v0/addresses/${address}/nfts?api-key=f343c517-f581-41c6-850e-92aed788d6fa`, {}, {
+    //       withCredentials: false,
+    //       headers : {
+    //           'Content-Type': 'application/json',
+    //         },
+    //       }
+    //       ) )
+    //   })
+
+    //   try {
+    //     const responses = await Promise.all(requests)
+    //  let NXDE_slider_data = responses[0].data.nfts.filter( i => i.collectionName !== "Unknown");
+    //   NXDE_slider_data = NXDE_slider_data.filter( i => i.imageUrl.includes(".gif") !== true).slice(0, 20);
+    //  console.log("NXDE_slider_data",NXDE_slider_data)
+      
+    //   let BLXCKOUT_slider_data = responses[1].data.nfts.filter( i => i.collectionName !== "Unknown");
+    //   BLXCKOUT_slider_data = BLXCKOUT_slider_data.filter( i => i.imageUrl.includes(".gif") !== true).slice(0, 20);
+    //  console.log("BLXCKOUT_slider_data",BLXCKOUT_slider_data)
+   
+
+    //  let DEALS_slider_data = shuffle([
+    //   ...NXDE_slider_data,
+    //   ... BLXCKOUT_slider_data
+    // ])
+    // console.log("DEALS_slider_data",DEALS_slider_data)
+    //   setslideData({
+    //       NXDE: NXDE_slider_data,
+    //       BLXCKOUT: BLXCKOUT_slider_data,
+    //       RANDOM : DEALS_slider_data
+    //     })
+    //     // console.log(responses)
+    //   } catch(e) {
+    //     console.error(3)
+    //   }
+    //  }, [])
+   
+     function shuffle(array) {
+      let currentIndex = array.length,  randomIndex;
+    
+      // While there remain elements to shuffle.
+      while (currentIndex != 0) {
+    
+        // Pick a remaining element.
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+    
+        // And swap it with the current element.
+        [array[currentIndex], array[randomIndex]] = [
+          array[randomIndex], array[currentIndex]];
+      }
+    
+      return array;
+    }
     
       useEffect(()=>{
-        getBlxckoutData();
-        getNxdeData();
+        fetchBlxckoutData()
+        fetchNXDEData()
       },[])
-  const getBlxckoutData = () => {
-    axios.get(`http://ec2-18-170-1-126.eu-west-2.compute.amazonaws.com:3000/get-blxckout-snapshots`, {
-      withCredentials: false,
-      headers: {
-        'Accept': 'application/json',
-      }
-    }
-    )
-      .then(({ data }) => {
-        console.log("get-market-place-snapshot => ", data.market_place_snapshots)
+      const fetchBlxckoutData = async () => {
+         await axios.get(`https://api-mainnet.magiceden.dev/v2/collections/blxckout_/listings?offset=0&limit=20`,
+          )
+            .then(({ data }) => {
+              let mainArr = [];
+              mainArr = data;
+              if(mainArr.length > 0){
+                mainArr.map((item, index) => {
+                  if(blxckout_data_arr.length < 20){
+                    let price = item.price;
+                    axios.get(`https://api-mainnet.magiceden.dev/v2/tokens/${item.tokenMint}`,
+                              )
+                                .then(({ data }) => {
+                                  if(data){
+                                    data.price = price
+                                    console.log(data)
+                                    setBlxckout_data_arr(oldArray => [...oldArray,data] );
+                                  }
+                                })
+                                .catch(function (error) {
+                                  console.log("error => ",error)
+                                });
+                  }
+                })
+              }
 
-        setBlxckout_data_arr(data.market_place_snapshots.slice(0, 20))
-      })
-      .catch(function (error) {
-        console.log(error)
-      });
-  }
-  const getNxdeData = () => {
-    axios.get(`http://ec2-18-170-1-126.eu-west-2.compute.amazonaws.com:3000/get-nxde-snapshots`, {
-      withCredentials: false,
-      headers: {
-        'Accept': 'application/json',
+            })
+            .catch(function (error) {
+              console.log("error => ",error)
+            })
+            .finally(() => {  console.log("setBlxckout_data_arr",blxckout_data_arr)  });
+
+            
+
       }
-    }
-    )
-      .then(({ data }) => {
-        console.log("get-NXDE-snapshot => ", data.market_place_snapshots)
-        setNxde_data_arr(data.market_place_snapshots.slice(0, 20))
-      })
-      .catch(function (error) {
-        console.log(error)
-      });
-  }
+      const fetchNXDEData = async () => {
+        await axios.get(`https://api-mainnet.magiceden.dev/v2/collections/thenxde/listings?offset=0&limit=20`,{},{
+          withCredentials: false,
+                headers : {
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Credentials' : true
+                  }
+        }
+         )
+           .then(({ data }) => {
+             let mainArr = [];
+             mainArr = data;
+             if(mainArr.length > 0){
+               mainArr.map((item, index) => {
+                 if(nxde_data_arr.length < 20){
+                   let price = item.price;
+                   axios.get(`https://api-mainnet.magiceden.dev/v2/tokens/${item.tokenMint}`,{},{
+                    withCredentials: false,
+                    headers : {
+                        'Content-Type': 'application/json',
+                        'Access-Control-Allow-Credentials' : true
+                      }
+                  }
+                             )
+                               .then(({ data }) => {
+                                 if(data){
+                                   data.price = price
+                                   console.log(data)
+                                   setNxde_data_arr(oldArray => [...oldArray,data] );
+                                 }
+                               })
+                               .catch(function (error) {
+                                 console.log("error => ",error)
+                               });
+                 }
+               })
+             }
+
+           })
+           .catch(function (error) {
+             console.log("error => ",error)
+           })
+           .finally(() => {  console.log("setBlxckout_data_arr",blxckout_data_arr)  });
+
+           
+
+     }
   return (
     
     <div className="gifBg w-100">
@@ -150,11 +323,13 @@ export const NFT = () => {
               </div>
              {blxckout_data_arr.length > 0 &&    <Slider className='py-4' {...slideN}>
                    {Children.toArray(blxckout_data_arr.map((post)=> {
-                      const { name , meta_data_img, attributes } = post; 
+                      const { name , image, attributes, price } = post; 
+                      let obj = attributes.find(o => o.value === 'Rental');
+                    if(!obj){
                       return(
                         <Row className='d-flex'>
                             <Col md={5} sm={12}>
-                            <img src={meta_data_img} className="nfticon w-100" alt="missing" />
+                            <img src={image} className="nfticon w-100" alt="missing" />
                             </Col>
                             <Col md={7} sm={12}>
                                 <div className=" ">
@@ -163,32 +338,25 @@ export const NFT = () => {
                                 <div className="socialnft">
                                   <div className="hash">
                                       <span className='text-muted f-14'>Price</span>
-                                      <p className="fw-bold height01 f-14 mb-2 textPink">{post.lowest_listing_mpa.price} SOL</p>
+                                      <p className="fw-bold height01 f-14 mb-2 textPink">{price} SOL</p>
                                     </div>
                                     <button>Buy Now</button>
                                   </div>
                                 </div>
                                 <div className="w-95">
                                   <div className="slidercontent">
-                                   {
-                Object.entries(post.attributes).map(([key, val]) => 
-                <div key={key} className="hash">
-                                      <span className='text-muted f-14'>{key}</span>
-                                      <p className="fw-bold height01 f-14 mb-2 textPink">{val}</p>
-                                    </div>
-                )
-            }
-                                    {/* {Children.toArray(attributes.map(trait => (
+                                    {Children.toArray(attributes.map(trait => (
                                       <div className="hash">
                                       <span className='text-muted f-14'>{trait.trait_type}</span>
                                       <p className="fw-bold height01 f-14 mb-2 textPink">{trait.value}</p>
                                     </div>
-                                    )))} */}
+                                    )))}
                                     </div>
                                 </div>
                             </Col>
                           </Row>
                       )
+                    }
                        } ))}
                    </Slider>}
                
@@ -200,11 +368,13 @@ export const NFT = () => {
               {nxde_data_arr.length > 0 && 
                 <Slider className='py-5' {...slideN}>
                   {Children.toArray(nxde_data_arr.map((post)=> {
-                    const { name , meta_data_img, attributes } = post; 
-                    return(
+                    const { name , image, attributes, price } = post; 
+                      let obj = attributes.find(o => o.value === 'Rental');
+                      if(!obj){
+                        return(
                       <Row className='d-flex'>
                         <Col md={5} sm={12}>
-                        <img src={meta_data_img} className="nfticon w-100" alt="missing" />
+                        <img src={image} className="nfticon w-100" alt="missing" />
                         </Col>
                         <Col md={7} sm={12}>
                             <div className=" ">
@@ -213,26 +383,25 @@ export const NFT = () => {
                               <div className="socialnft">
                                   <div className="hash">
                                       <span className='text-muted f-14'>Price</span>
-                                      <p className="fw-bold height01 f-14 mb-2 textPink">{post.lowest_listing_mpa.price} SOL</p>
+                                      <p className="fw-bold height01 f-14 mb-2 textPink">{parseFloat(price).toFixed(1)} SOL</p>
                                     </div>
                                     <button>Buy Now</button>
                                   </div>
                                 </div>
                                 <div className="w-95">
                                   <div className="slidercontent">
-                                  { post.attributes &&
-                Object.entries(post.attributes).map(([key, val]) => 
-                <div key={key} className="hash">
-                                      <span className='text-muted f-14'>{key}</span>
-                                      <p className="fw-bold height01 f-14 mb-2 textPink">{val}</p>
+                                    {Children.toArray(attributes.map(trait => (
+                                      <div className="hash">
+                                      <span className='text-muted f-14'>{trait.trait_type}</span>
+                                      <p className="fw-bold height01 f-14 mb-2 textPink">{trait.value}</p>
                                     </div>
-                )
-            }
+                                    )))}
                                     </div>
                                 </div>
                         </Col>
                       </Row>
                   )
+                      }
                   }))}
                     </Slider>
                     }
@@ -247,10 +416,10 @@ export const NFT = () => {
             </div>
             <Slider {...settings}>
                  {Children.toArray([...blxckout_data_arr,...nxde_data_arr].sort(() => Math.random() - 0.5).map((post)=> {
-                  const { name , meta_data_img, project_name } = post; 
+                  const { name , image, price,collection } = post; 
                   return(
                   <div>
-                    <img src={meta_data_img} className="w-100" alt="missing" />
+                    <img src={image} className="w-100" alt="missing" />
                     <div className="d-flex pt-2 space-between ">
                       <div className="hash">
                         <span className='textPink'>{name} 
@@ -260,14 +429,14 @@ export const NFT = () => {
                             <Button className='p-0 textPink ' variant=''><AiFillExclamationCircle/></Button>
                           </OverlayTrigger>
                         </span>
-                        <h6 className="fw-bold ">{project_name == "BLXCKOUT" ? project_name : "The NXDE"}</h6>
+                        <h6 className="fw-bold ">{collection.toUpperCase()}</h6>
                       </div>
                       <button className="detailbtn">Details</button>
                     </div>
                     <div className="d-flex space-between ">
                       <div className="hash">
                         <span className='text-muted'>PRICE</span>
-                        <p className="fw-bold height08 f-14 mb-2">{parseFloat(post.lowest_listing_mpa.price).toFixed(1)}</p>
+                        <p className="fw-bold height08 f-14 mb-2">{parseFloat(price).toFixed(1)}</p>
                       </div>
                       <button className="buybtn">BUY NOW</button>
                     </div>
