@@ -36,9 +36,9 @@ export const ServerX = ({innerRef}) => {
         </Col>
         <Col md={6} xs={12} className="order-sm-last order-md-first order-last order-lg-first">
         <h1 className='fw-bold'>SERVE-X<span className='textPink'><GoPrimitiveDot/></span> </h1>
-          <p className='mb-3'>SYNX is a revolutionary data storage application built on the Solana blockchain. Using GenesysGo's Shadow Drive, this new tech connects seamlessly to the blockchain, thus enabling your data to be owned, used and controlled by you.
+          <p className='mb-3'>Serve-X exists is to assist NFT project owners and make life a little bit easier. The all-in-one Discord bot has tools, features and handy management options. 
           </p>
-          <p>  Traditional storage methods use a single point of access and is stored one their own servers. SYNX gives you back full control of the most valuable commodity there is, your personal data.</p>
+          <p>  From simple giveaways to complex wallet collection functionality, there is always going to be something Serve-X can help with.</p>
         </Col>
     </Row>
     <div className="mobileView text-white text-center">
