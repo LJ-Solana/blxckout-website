@@ -909,12 +909,12 @@ button.navbar-toggler.collapsed{
             .slick-next {
                 right: 4%;
                 z-index: 1;
-                height: 22px;
+                height: 23px;
             }
             .slick-prev {
                 left: 4%;
-                height: 22px;
-                width: 22px!important;
+                height: 23px;
+                width: 23px!important;
             }
             .slick-prev, .slick-next {
                 top: 35%;
@@ -929,21 +929,26 @@ button.navbar-toggler.collapsed{
                 border: 0;
             }
             .slick-prev:before{
-            font-size: 11px;
-            line-height: 1;
-            border-radius: 100%;
-            box-shadow: none;
-            background: #490064;
-            opacity: 1 !important;
-            padding: 1px 2px;
-            border: 5px solid #490064;
-            outline: none;
-            color: #a900e6;
-            -webkit-font-smoothing: antialiased;
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            content: "\f053";
-        }      
+                font-size: 11px;
+                line-height: 1;
+                border-radius: 100%;
+                box-shadow: none;
+                background: #490064;
+                opacity: 1 !important;
+                padding: 0px 0px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                height: 23px;
+                width: 23px;
+                border: 4px solid #490064;
+                outline: none;
+                color: #a900e6;
+                -webkit-font-smoothing: antialiased;
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                content: "\f053";
+            } 
         .slick-next:before {
             font-family: "Font Awesome 5 Free";
             font-weight: 900;
@@ -954,14 +959,19 @@ button.navbar-toggler.collapsed{
             border-radius: 100%;
             background: #490064;
             opacity: 1 !important;
-            padding: 1px 0px;
-            border: 5px solid #490064;
+            padding: 1px 0px;  
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 23px;
+            width: 23px;
+            border: 4px solid #490064;
             outline: none;
             color: #a900e6;
             -webkit-font-smoothing: antialiased;
         }
         .slick-next {
-            width: 22px;
+            width: 23px;
         }
         .slick-next:before{
             display: block;

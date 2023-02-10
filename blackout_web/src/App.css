@@ -940,12 +940,12 @@ a.navbar-brand img {
   .nftcenter .slick-next, .longslide .slick-next {
     right: 4%;
     z-index: 1;
-    height: 22px;
+    height: 23px;
   }
   .nftcenter .slick-prev, .longslide .slick-prev {
     left: 4%;
-    height: 22px;
-    width: 22px !important;
+    height: 23px;
+    width: 23px !important;
   }
   .nftcenter .slick-prev, .nftcenter .slick-next, .longslide .slick-prev, .longslide .slick-next {
     top: 35%;
@@ -966,8 +966,13 @@ a.navbar-brand img {
     box-shadow: none;
     background: #490064;
     opacity: 1 !important;
-    padding: 1px 2px;
-    border: 5px solid #490064;
+    padding: 0px 0px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 23px;
+    width: 23px;
+    border: 4px solid #490064;
     outline: none;
     color: #a900e6;
     -webkit-font-smoothing: antialiased;
@@ -986,13 +991,18 @@ a.navbar-brand img {
     background: #490064;
     opacity: 1 !important;
     padding: 1px 0px;
-    border: 5px solid #490064;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 23px;
+    width: 23px;
+    border: 4px solid #490064;
     outline: none;
     color: #a900e6;
     -webkit-font-smoothing: antialiased;
   }
   .nftcenter .slick-next, .longslide .slick-next {
-    width: 22px;
+    width: 23px;
   }
   .nftcenter .slick-next:before, .longslide .slick-next:before {
     display: block;
