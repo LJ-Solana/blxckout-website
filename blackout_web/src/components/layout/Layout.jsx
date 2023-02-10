@@ -106,15 +106,19 @@ export const Layout = (props) => {
                                 {/* <li>Roadmap</li> */}
                                 <li> <a href="/Products">Roadmap</a></li>
                                 <li> <a href="https://hyperspace.xyz/collection/5Ts39fU956Z8PUtDYHQHLYZJa2Yvi97k7xVSFh6WfVf"> Markets</a></li>
-                                <li>Go to App  <HiArrowUpRight/></li>
+                                {/* <li>Go to App  <HiArrowUpRight/></li> */}
                             </ul>
                         </Col>
                         <Col md={5} sm={6} xs={6}>
                             <ul>
                                 <h6 className='fw-bold'>Resources</h6>
                                 <li>Litepaper  <HiArrowUpRight/></li>
-                                <li> <a href="docs.blxckout.xyz">Documentations  <HiArrowUpRight/> </a> </li>
-                                <li>FAQ <HiArrowUpRight/></li>
+                                <li> <a href="https://docs.blxckout.xyz">Documentations  <HiArrowUpRight/> </a> </li>
+                                <li>
+                                <a href="https://blxckout.gitbook.io/synx">
+                                FAQ <HiArrowUpRight/>
+                                </a>
+                                </li>
                             </ul>
                         </Col>
                         <Col md={4} sm={12} xs={12} className="socialiconsend">
