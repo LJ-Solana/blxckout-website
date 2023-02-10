@@ -938,7 +938,7 @@ a.navbar-brand img {
     padding: 0 1.3rem;
   }
   .nftcenter .slick-next, .longslide .slick-next {
-    right: 4%;
+    right: 3%;
     z-index: 1;
     height: 23px;
   }
@@ -966,8 +966,7 @@ a.navbar-brand img {
     box-shadow: none;
     background: #490064;
     opacity: 1 !important;
-    padding: 0px 0px;
-    display: inline-flex;
+    display: inline-flex !important;
     align-items: center;
     justify-content: center;
     height: 23px;
@@ -990,8 +989,7 @@ a.navbar-brand img {
     border-radius: 100%;
     background: #490064;
     opacity: 1 !important;
-    padding: 1px 0px;
-    display: inline-flex;
+    display: inline-flex !important;
     align-items: center;
     justify-content: center;
     height: 23px;
