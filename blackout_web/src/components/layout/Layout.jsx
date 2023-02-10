@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // import { Link, NavLink } from "react-router-dom";
@@ -14,16 +14,27 @@ import Navbar from 'react-bootstrap/Navbar';
 import logo from '../../imgs/logo.png'
 import solanalogo from '../../imgs/solanaLogo.png'
 import gengologo from '../../imgs/genesysgo_white.png'
+import {useLocation, useNavigate} from 'react-router-dom';
 // import { HiArrowUpRight } from 'react-icons/hi2';
 import Bramah from '../../imgs/Bramah.png'
 import KudelskiSecurity from '../../imgs/KudelskiSecurity.png'
 
 export const Layout = (props) => {
+    const location = useLocation();
+    const navigate = useNavigate();
+  
+    useEffect(() => {
+      }, []);
     const goToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth',
-        });
+        if(location.pathname != "/"){
+            window.location.replace('/');
+        }else{
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            });
+        }
+     
     };
   return (
     <div>
@@ -37,11 +48,11 @@ export const Layout = (props) => {
                 <Navbar.Brand href="/" className='d-none-desktop'><img src={logo} alt="missing" /></Navbar.Brand>
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="ms-auto">
-                    <Nav.Link href="/">Home</Nav.Link>
-                    <Nav.Link href="/RoadMapDetail">Product</Nav.Link>
-                    <Nav.Link href="/NFT">NFT</Nav.Link>
+                    <Nav.Link href="javascript:void(0)" onClick={() => navigate("/")}>Home</Nav.Link>
+                    <Nav.Link href="javascript:void(0)" onClick={() => navigate("/Products")}>Product</Nav.Link>
+                    <Nav.Link href="javascript:void(0)" onClick={() => navigate("/NFT")}>NFT</Nav.Link>
                     {/* <Nav.Link href="#home">Adopt</Nav.Link> */}
-                    <Nav.Link href="/Contact">Contact Us</Nav.Link>
+                    <Nav.Link href="javascript:void(0)" onClick={() => navigate("/Contact")}>Contact Us</Nav.Link>
                     <Nav.Link href="#link" className='wallet'>Connect wallet</Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
@@ -58,7 +69,10 @@ export const Layout = (props) => {
                     <Row>
                         <Col md={6} xs={12} className="dgrid">
                             <h1 className='fw-bold'>Need more help?</h1>
-                            <button className='mt-3 fw-bold'>READ FAQ  <HiArrowUpRight/></button>
+                            <a href="https://blxckout.gitbook.io/synx">
+                            <button className='mt-3 fw-bold'>Read FAQ  <HiArrowUpRight/></button>
+            </a>
+                           
                         </Col>
                         <Col md={3} xs={12} className="text-center align-self-center">
                             <img style={{width:"100%"}} src={solanalogo} className="auditLogo1" alt="missing" />    
@@ -90,7 +104,7 @@ export const Layout = (props) => {
                                 <h6 className='fw-bold'>Blackout</h6>
                                 <li style={{cursor:"pointer"}} onClick={() => goToTop()}>About us</li>
                                 {/* <li>Roadmap</li> */}
-                                <li> <a href="/RoadMapDetail">Roadmap</a></li>
+                                <li> <a href="/Products">Roadmap</a></li>
                                 <li> <a href="https://hyperspace.xyz/collection/5Ts39fU956Z8PUtDYHQHLYZJa2Yvi97k7xVSFh6WfVf"> Markets</a></li>
                                 <li>Go to App  <HiArrowUpRight/></li>
                             </ul>

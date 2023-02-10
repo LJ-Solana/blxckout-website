@@ -9,6 +9,8 @@ import icon3 from '../../imgs/contacticon3.png'
 import icon4 from '../../imgs/contacticon4.png'
 import Bramah from '../../imgs/Bramah.png'
 import KudelskiSecurity from '../../imgs/KudelskiSecurity.png'
+import solanalogo from '../../imgs/solanaLogo.png'
+import gengologo from '../../imgs/genesysgo_white.png'
 import gif from '../../imgs/animation.gif'
 import { NavLink } from 'react-router-dom'
 
@@ -59,8 +61,8 @@ export const Contact = () => {
               </ul>
               <ul className='contacticons text-center d-flex row'>
                 <li className='col-12 col-md-4'> <h5 className='textPink'>Powered By</h5></li>
-                <li className='col-6 col-md-4'><img src={KudelskiSecurity} alt="missing" /></li>
-                <li className='col-6 col-md-4'><img className='contactlogo2' src={Bramah} alt="missing" /></li>
+                <li className='col-6 col-md-4'><img src={solanalogo} alt="missing" /></li>
+                <li className='col-6 col-md-4'><img className='contactlogo2' style={{width:"100%"}} src={gengologo} alt="missing" /></li>
               </ul>
             </Col>
           </Row>

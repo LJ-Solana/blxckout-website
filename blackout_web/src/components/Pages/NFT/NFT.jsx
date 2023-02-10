@@ -74,6 +74,24 @@ export const NFT = () => {
             }
           }]
       };
+        var DealsSettings = {
+        dots: false,
+        infinite: true,
+      // autoplay: true,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false
+            }
+          }]
+      };
       var slideN = {
         dots: false,
         infinite: false,
@@ -245,7 +263,7 @@ export const NFT = () => {
               <h4 className="fw-bold">Deals on NFTs</h4>
               <button className='viewm'>VIEW MARKETPLACE</button>
             </div>
-            <Slider {...settings}>
+            <Slider {...DealsSettings}>
                  {Children.toArray([...blxckout_data_arr,...nxde_data_arr].sort(() => Math.random() - 0.5).map((post)=> {
                   const { name , meta_data_img, project_name } = post; 
                   return(
@@ -253,13 +271,13 @@ export const NFT = () => {
                     <img src={meta_data_img} className="w-100" alt="missing" />
                     <div className="d-flex pt-2 space-between ">
                       <div className="hash">
-                        <span className='textPink'>{name} 
+                        {/* <span className='textPink'>{name} 
                           <OverlayTrigger overlay={
                               <Tooltip id={`tooltip`}> Tooltip on  </Tooltip>
                             }>
                             <Button className='p-0 textPink ' variant=''><AiFillExclamationCircle/></Button>
                           </OverlayTrigger>
-                        </span>
+                        </span> */}
                         <h6 className="fw-bold ">{project_name == "BLXCKOUT" ? project_name : "The NXDE"}</h6>
                       </div>
                       <button className="detailbtn">Details</button>
@@ -267,7 +285,7 @@ export const NFT = () => {
                     <div className="d-flex space-between ">
                       <div className="hash">
                         <span className='text-muted'>PRICE</span>
-                        <p className="fw-bold height08 f-14 mb-2">{parseFloat(post.lowest_listing_mpa.price).toFixed(1)}</p>
+                        <p className="fw-bold height08 f-14 mb-2">{parseFloat(post.lowest_listing_mpa.price).toFixed(1)} SOL</p>
                       </div>
                       <button className="buybtn">BUY NOW</button>
                     </div>

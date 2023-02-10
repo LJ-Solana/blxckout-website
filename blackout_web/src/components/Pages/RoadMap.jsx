@@ -17,7 +17,7 @@ const roadMap = [
     vector: vector1,
     renderingclass: "roadmapicon1",
     icon: icon1,
-    redirect: '/RoadMapDetail/?section=synx'
+    redirect: '/Products/?section=synx'
   },
   {
     title: "The NXDE",
@@ -26,7 +26,7 @@ const roadMap = [
     vector: vector2,
     renderingclass: "roadmapicon2",
     icon: icon2,
-    redirect: '/RoadMapDetail/?section=nxde'
+    redirect: '/Products/?section=nxde'
   },
   {
     title: "Serve-X",
@@ -35,7 +35,7 @@ const roadMap = [
     vector: vector3,
     renderingclass: "roadmapicon3",
     icon: icon3,
-    redirect: '/RoadMapDetail/?section=SERVEx'
+    redirect: '/Products/?section=SERVEx'
   }
 ]
 
