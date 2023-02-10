@@ -13,7 +13,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../../imgs/logo.png'
 import solanalogo from '../../imgs/solanaLogo.png'
-import gengologo from '../../imgs/gengologo.svg'
+import gengologo from '../../imgs/genesysgo_white.png'
 // import { HiArrowUpRight } from 'react-icons/hi2';
 import Bramah from '../../imgs/Bramah.png'
 import KudelskiSecurity from '../../imgs/KudelskiSecurity.png'

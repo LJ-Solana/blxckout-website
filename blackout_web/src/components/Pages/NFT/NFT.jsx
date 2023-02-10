@@ -105,7 +105,7 @@ export const NFT = () => {
         getNxdeData();
       },[])
   const getBlxckoutData = () => {
-    axios.get(`http://ec2-18-170-1-126.eu-west-2.compute.amazonaws.com:3000/get-blxckout-snapshots`, {
+    axios.get(`https://api.mp.blxckout.xyz/get-blxckout-snapshots`, {
       withCredentials: false,
       headers: {
         'Accept': 'application/json',
@@ -113,7 +113,7 @@ export const NFT = () => {
     }
     )
       .then(({ data }) => {
-        console.log("get-market-place-snapshot => ", data.market_place_snapshots)
+        // console.log("get-market-place-snapshot => ", data.market_place_snapshots)
 
         setBlxckout_data_arr(data.market_place_snapshots.slice(0, 20))
       })
@@ -122,7 +122,7 @@ export const NFT = () => {
       });
   }
   const getNxdeData = () => {
-    axios.get(`http://ec2-18-170-1-126.eu-west-2.compute.amazonaws.com:3000/get-nxde-snapshots`, {
+    axios.get(`https://api.mp.blxckout.xyz/get-nxde-snapshots`, {
       withCredentials: false,
       headers: {
         'Accept': 'application/json',
@@ -130,7 +130,7 @@ export const NFT = () => {
     }
     )
       .then(({ data }) => {
-        console.log("get-NXDE-snapshot => ", data.market_place_snapshots)
+        // console.log("get-NXDE-snapshot => ", data.market_place_snapshots)
         setNxde_data_arr(data.market_place_snapshots.slice(0, 20))
       })
       .catch(function (error) {
