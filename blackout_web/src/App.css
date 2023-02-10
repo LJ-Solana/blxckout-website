@@ -945,6 +945,7 @@ a.navbar-brand img {
   .nftcenter .slick-prev, .longslide .slick-prev {
     left: 4%;
     height: 22px;
+    width: 22px !important;
   }
   .nftcenter .slick-prev, .nftcenter .slick-next, .longslide .slick-prev, .longslide .slick-next {
     top: 35%;

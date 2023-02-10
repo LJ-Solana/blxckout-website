@@ -914,6 +914,7 @@ button.navbar-toggler.collapsed{
             .slick-prev {
                 left: 4%;
                 height: 22px;
+                width: 22px!important;
             }
             .slick-prev, .slick-next {
                 top: 35%;
@@ -959,7 +960,7 @@ button.navbar-toggler.collapsed{
             color: #a900e6;
             -webkit-font-smoothing: antialiased;
         }
-        .slick-prev,.slick-next {
+        .slick-next {
             width: 22px;
         }
         .slick-next:before{
