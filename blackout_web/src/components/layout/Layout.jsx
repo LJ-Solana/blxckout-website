@@ -112,7 +112,7 @@ export const Layout = (props) => {
                         <Col md={5} sm={6} xs={6}>
                             <ul>
                                 <h6 className='fw-bold'>Resources</h6>
-                                <li>Litepaper  <HiArrowUpRight/></li>
+                                {/* <li>Litepaper  <HiArrowUpRight/></li> */}
                                 <li> <a href="https://docs.blxckout.xyz">Documentations  <HiArrowUpRight/> </a> </li>
                                 <li>
                                 <a href="https://blxckout.gitbook.io/synx">

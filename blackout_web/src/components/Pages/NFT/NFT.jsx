@@ -149,7 +149,10 @@ export const NFT = () => {
     )
       .then(({ data }) => {
         // console.log("get-NXDE-snapshot => ", data.market_place_snapshots)
-        setNxde_data_arr(data.market_place_snapshots.slice(0, 20))
+        let result = data.market_place_snapshots.slice(0, 20).sort((a, b) => a.lowest_listing_mpa.price - b.lowest_listing_mpa.price);
+
+console.log(result);
+        setNxde_data_arr(result)
       })
       .catch(function (error) {
         console.log(error)
